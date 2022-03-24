@@ -1,12 +1,17 @@
-## Personal Portfolio
+## Jan Zaion Web
 
-### [Live Site](https://jsmasterypro.com)
+### TODO
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+- remove styled components and use standard css in styles
+- style front page nad dummy docu pages. No need to overdo it, can finish after content
+- connect with docupages and make the jamstack work
+- finish and style docupages
+- add animation
+- add final content
+- finish styling
+- remove all fluff, do a little refac
+- publish
 
-This is a code repository for the corresponding video tutorial. Your portfolio is your resume and your business card.
+### to maybe delete
 
-In this video, we will create a full Personal Development Portfolio. We're going to use React and Next.js.
-
-Setup:
-- run ```npm i && npm start```
+theme.js (after getting rid of SCc), document.js
