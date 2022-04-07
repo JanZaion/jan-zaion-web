@@ -23,11 +23,6 @@ const Header = () => (
           <NavLink>Technologies</NavLink>
         </Link>
       </li>
-      <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
-        </Link>
-      </li>
     </Div2>
     <Div3>
       <SocialIcons href="https://google.com">

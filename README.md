@@ -2,7 +2,6 @@
 
 ### TODO
 
-- remove styled components and use standard css in styles
 - style front page nad dummy docu pages. No need to overdo it, can finish after content
 - connect with docupages and make the jamstack work
 - finish and style docupages
