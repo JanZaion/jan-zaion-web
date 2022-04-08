@@ -30,7 +30,8 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   grid-area: 1 / 1 / 2 / 5;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
