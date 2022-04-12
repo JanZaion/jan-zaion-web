@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  /* max-width: 1040px; */
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 1fr; */
-  /* grid-column-gap: 2rem; */
-  padding: 2rem;
+  max-width: 1040px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
   padding-top: 2.5rem;
+  margin: 0 auto;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -33,7 +33,6 @@ export const Div2 = styled.div`
   align-items: center;
 
   gap: 1.5rem;
-  /* justify-content: space-around; */
   justify-content: flex-start;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
