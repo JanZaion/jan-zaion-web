@@ -23,14 +23,14 @@ const Footer = () => {
           <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
         </LinkColumn> */}
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
+          <LinkTitle>Contact</LinkTitle>
           <LinkItem href="mailto:contact@jsmastery.com">contact@jsmastery.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
-        <CompanyContainer>
+        {/* <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>
-        </CompanyContainer>
+        </CompanyContainer> */}
         <SocialContainer>
           <SocialIcons href="https://google.com">
             <AiFillGithub size="3rem" />
