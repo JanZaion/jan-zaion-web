@@ -1,5 +1,3 @@
-// import React from 'react';
-
 import {
   BlogCard,
   CardInfo,
@@ -7,17 +5,12 @@ import {
   GridContainer,
   HeaderThree,
   Hr,
-  Tag,
-  TagList,
   TitleContent,
   UtilityList,
   Img,
 } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
-// import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
 import Link from 'next/link';
 
 const Projects = () => (
@@ -43,30 +36,5 @@ const Projects = () => (
     </GridContainer>
   </Section>
 );
-
-export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('./mds/ppmds/'));
-
-  const ppmds = files.map((file) => {
-    const slug = file.replace('.md', '');
-
-    const markdownWithMeta = fs.readFileSync(path.join('./mds/ppmds/', file), 'utf-8');
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-
-    return {
-      slug,
-      frontmatter,
-    };
-  });
-
-  return {
-    props: {
-      ppmds: ppmds.sort((a, b) => {
-        return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
-      }),
-    },
-  };
-}
 
 export default Projects;
