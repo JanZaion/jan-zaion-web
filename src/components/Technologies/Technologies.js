@@ -12,7 +12,7 @@ const Technologies = () => (
       <br />
       <br /> But I hate design
     </SectionText>
-    <List>
+    {/* <List>
       <ListItem>
         <picture>
           <DiReact size="3rem" />
@@ -49,7 +49,7 @@ const Technologies = () => (
           </ListParagraph>
         </ListContainer>
       </ListItem>
-    </List>
+    </List> */}
     <SectionDivider colorAlt />
   </Section>
 );

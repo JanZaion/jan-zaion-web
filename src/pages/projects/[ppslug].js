@@ -10,14 +10,32 @@ export default function DocuPage({
 }) {
   return (
     <Layout>
-      <div>
-        <div>
+      <div className="product-hero">
+        <div className="heroic-title">
           <h1>{title}</h1>
           <p>{tag_line}</p>
         </div>
-        <div>
-          {/* <Image src={cover_image} alt="" width="1000" height="347" /> */}
-          <p>img placeholder</p>
+        {/* for the image, figure out a way to stretch it based on the size of the img */}
+        <div className="hero-img">{/* <Image src={cover_image} alt="" width="1000" height="347" /> */}</div>
+      </div>
+      <div className="product-sticky">
+        <div className="sticky-title">
+          <h2>{title}</h2>
+        </div>
+        {/* <Buy price={price} cssClass={'price-tag'} /> */}
+      </div>
+      <div className="product-md">
+        {/* <Section_Parser content={content} inner={'md-content'} outer={'alternate'} /> */}
+        <p>{content}</p>
+        {/* <Documentation documentation_slug={documentation_slug} title={title} /> */}
+      </div>
+      <div className="seal-deal-strip">
+        <div className="seal-deal">
+          {/* <Buy price={price} cssClass={'price-tag-main'} /> */}
+          <div className="requirements">
+            <h3>Requirements:</h3>
+            {/* <Conditional_List list={requirements} /> */}
+          </div>
         </div>
       </div>
     </Layout>
