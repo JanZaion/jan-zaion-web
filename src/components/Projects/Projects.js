@@ -11,7 +11,6 @@ import {
 } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
-import Link from 'next/link';
 
 const Projects = () => (
   <Section id="projects">
@@ -28,7 +27,7 @@ const Projects = () => (
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <UtilityList>
-              <ExternalLinks href={p.source}>Learn more</ExternalLinks>
+              <ExternalLinks href={`/projects/${p.title.split(' ').join('-')}`}>Learn more</ExternalLinks>
             </UtilityList>
           </BlogCard>
         );
