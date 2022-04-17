@@ -1,12 +1,15 @@
 ---
 title: 'Chord Spawner'
-tag_line: "Chord Spawner is a Max for Live midi device for instant generation of chord progressions. Get inspired or create a chord progression outright directly inside Ableton Live's clips."
+tag_line: "Chord Spawner is a Max for Live midi device for instant generation of chord progressions. Get inspired or create a chord progression directly inside Ableton Live's clips."
 products_image: '/images/1.png'
 cover_image: '/images/plug_plac.gif'
 documentation_slug: 'test-copy'
 price: '12.50'
 requirements: '- Ableton Live Suite 10/11 (with Max 8 or higher) | - MacOS or Windows | - Installation size: 44.0 KB'
 date: '7/23/2021'
+repo: 'https://www.github.com/'
+# links are tricky, always put them in in absolute format if they lead to an external source, / at the end included
+download: 'https://www.google.com/'
 demo_video:
 testemonial:
 ---

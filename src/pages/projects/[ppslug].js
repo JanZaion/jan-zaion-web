@@ -3,27 +3,29 @@ import path from 'path';
 import matter from 'gray-matter';
 import Image from 'next/image'; //Image from next is not supposed to work or something, look into it if true
 import { Layout } from '../../layout/Layout';
+import ProductHero from '../../components/ProductHero/ProductHero';
+import Sticky from '../../components/Sticky/Sticky';
 
 export default function DocuPage({
-  frontmatter: { title, tag_line, cover_image, documentation_slug, price, requirements, demo_video, testemonial },
+  frontmatter: {
+    title,
+    tag_line,
+    cover_image,
+    repo,
+    download,
+    documentation_slug,
+    price,
+    requirements,
+    demo_video,
+    testemonial,
+  },
   content,
 }) {
   return (
     <Layout>
-      <div className="product-hero">
-        <div className="heroic-title">
-          <h1>{title}</h1>
-          <p>{tag_line}</p>
-        </div>
-        {/* for the image, figure out a way to stretch it based on the size of the img */}
-        <div className="hero-img">{/* <Image src={cover_image} alt="" width="1000" height="347" /> */}</div>
-      </div>
-      <div className="product-sticky">
-        <div className="sticky-title">
-          <h2>{title}</h2>
-        </div>
-        {/* <Buy price={price} cssClass={'price-tag'} /> */}
-      </div>
+      <ProductHero title={title} tag_line={tag_line} cover_image={cover_image} />
+      <Sticky title={title} repo={repo} download={download} />
+
       <div className="product-md">
         {/* <Section_Parser content={content} inner={'md-content'} outer={'alternate'} /> */}
         <p>{content}</p>
