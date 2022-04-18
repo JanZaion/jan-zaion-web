@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const StickyBar = styled.div`
-  position: sticky;
+  /* position: sticky; */
+  position: ${(props) => (props.sticky ? 'sticky' : 'relative')};
   top: 0;
   width: 100%;
   background: #0f1624;

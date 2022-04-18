@@ -3,15 +3,9 @@ title: 'Chord Spawner'
 tag_line: "Chord Spawner is a Max for Live midi device for instant generation of chord progressions. Get inspired or create a chord progression directly inside Ableton Live's clips."
 products_image: '/images/1.png'
 cover_image: '/images/plug_plac.gif'
-documentation_slug: 'test-copy'
-price: '12.50'
-requirements: '- Ableton Live Suite 10/11 (with Max 8 or higher) | - MacOS or Windows | - Installation size: 44.0 KB'
-date: '7/23/2021'
 repo: 'https://www.github.com/'
 # links are tricky, always put them in in absolute format if they lead to an external source, / at the end included
 download: 'https://www.google.com/'
-demo_video:
-testemonial:
 ---
 
 ## Instant Chord Progressions
@@ -22,7 +16,7 @@ The process is simple:
 2. Edit the setup of Chord Spawner to create the desired chord progression.
 3. Click "Render" to spawn the chord progression.
 
-![Alt text](/images/1.png?raw=false 'Title')
+![Alt text](/images/1.png?raw=false 'this is a title for a placeholder image')
 
 Generate basic chord progressions comprised of triads or 7th chords. Render desired progressions instantaniously, until you get the one that fits your track. Utilize advanced features to enrich the basic chord progression with bass notes, voicing that is out of the root position, advanced rhythm patterns and more.
 
@@ -56,3 +50,9 @@ Chord progressions in their root position are nice, but moving notes around work
 - Support of arabic and roman numerals
 - 24 built-in algorhythms for voicing development
 - Ability to save and load a preset setup as .json file
+
+### Requirements
+
+- Ableton Live Suite 10/11 (with Max 8 or higher)
+- MacOS or Windows
+- Installation size: 44.0 KB
