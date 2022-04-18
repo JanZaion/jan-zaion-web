@@ -18,7 +18,7 @@ export const ProductContentContainer = styled.section`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
 
-    width: calc(100vw - 32px);
+    /* width: calc(100vw - 32px); */
     flex-direction: column;
   }
 `;
@@ -54,6 +54,9 @@ export const ProductContentText = styled.div`
   }
   ul > li {
     list-style: inherit;
+  }
+  img {
+    max-width: 100%;
   }
 
   h2,

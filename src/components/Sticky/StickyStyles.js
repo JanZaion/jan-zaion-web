@@ -8,7 +8,7 @@ export const StickyBar = styled.div`
   background: #0f1624;
   color: #ffffff;
   height: 60px;
-  padding: 0 120px;
+  padding-left: 6.5vw;
   display: flex;
   align-items: center;
 `;
