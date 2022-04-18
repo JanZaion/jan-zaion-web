@@ -27,10 +27,7 @@ export default function DocuPage({
       <ProductHero title={title} tag_line={tag_line} cover_image={cover_image} />
       <Sticky title={title} repo={repo} download={download} />
       <ProductContent content={content} />
-      <div className="product-md">
-        {/* <Section_Parser content={content} inner={'md-content'} outer={'alternate'} /> */}
-        {/* <Documentation documentation_slug={documentation_slug} title={title} /> */}
-      </div>
+
       <div className="seal-deal-strip">
         <div className="seal-deal">
           {/* <Buy price={price} cssClass={'price-tag-main'} /> */}

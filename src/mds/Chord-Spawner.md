@@ -22,7 +22,7 @@ The process is simple:
 2. Edit the setup of Chord Spawner to create the desired chord progression.
 3. Click "Render" to spawn the chord progression.
 
-![Alt text](/images/plug1.jpg?raw=false 'Title')
+![Alt text](/images/1.png?raw=false 'Title')
 
 Generate basic chord progressions comprised of triads or 7th chords. Render desired progressions instantaniously, until you get the one that fits your track. Utilize advanced features to enrich the basic chord progression with bass notes, voicing that is out of the root position, advanced rhythm patterns and more.
 

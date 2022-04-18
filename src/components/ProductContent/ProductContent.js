@@ -1,7 +1,6 @@
-import { Section, SectionTitle, SectionText, SectionDivider } from '../../styles/GlobalComponents';
+import { SectionDivider } from '../../styles/GlobalComponents';
 import { marked } from 'marked';
-
-// import { ProductContent } from './ProductContentStyles';
+import { ProductContentContainer, ProductContentText } from './ProductContentStyles';
 
 const ProductContent = ({ content }) => {
   const parsedContend = marked(content).split(/(<h2+)/g);
@@ -13,12 +12,11 @@ const ProductContent = ({ content }) => {
     .join(' ');
 
   return (
-    <Section>
-      <SectionText>
-        <div></div>
+    <ProductContentContainer>
+      <ProductContentText>
         <div dangerouslySetInnerHTML={{ __html: marked(sectionized) }}></div>
-      </SectionText>
-    </Section>
+      </ProductContentText>
+    </ProductContentContainer>
   );
 };
 
