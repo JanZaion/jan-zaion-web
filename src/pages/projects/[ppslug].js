@@ -5,6 +5,7 @@ import Image from 'next/image'; //Image from next is not supposed to work or som
 import { Layout } from '../../layout/Layout';
 import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
+import ProductContent from '../../components/ProductContent/ProductContent';
 
 export default function DocuPage({
   frontmatter: {
@@ -25,10 +26,9 @@ export default function DocuPage({
     <Layout>
       <ProductHero title={title} tag_line={tag_line} cover_image={cover_image} />
       <Sticky title={title} repo={repo} download={download} />
-
+      <ProductContent content={content} />
       <div className="product-md">
         {/* <Section_Parser content={content} inner={'md-content'} outer={'alternate'} /> */}
-        <p>{content}</p>
         {/* <Documentation documentation_slug={documentation_slug} title={title} /> */}
       </div>
       <div className="seal-deal-strip">

@@ -7,7 +7,7 @@ export const Section = styled.section`
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
-  position: relative;
+  position: relative; /* this makes the sticky seethrough */
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
 
@@ -78,7 +78,7 @@ export const SectionText = styled.p`
 
 export const SectionDivider = styled.div`
   width: 64px;
-  height: 6px;
+  height: 3px;
   /* border-radius: 10px; */
   background-color: #fff;
   background: #d0bb57;

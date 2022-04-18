@@ -1,4 +1,3 @@
-import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents';
 import { StickyBar, StickyBtn, BtnCont } from './StickyStyles';
 
 const Sticky = ({ title, repo, download }) => (
