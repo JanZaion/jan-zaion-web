@@ -226,6 +226,10 @@ export const ButtonFront = styled.button`
   box-shadow: ${({ disabled }) =>
     disabled ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)' : 'none'};
 
+  a {
+    color: white;
+  }
+
   &:hover {
     opacity: 0;
   }
