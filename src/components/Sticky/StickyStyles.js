@@ -8,14 +8,14 @@ export const StickyBar = styled.div`
   background: #0f1624;
   color: #ffffff;
   height: 60px;
-  padding-left: 6.5vw;
+  padding-left: 48px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-`;
 
-export const BtnCont = styled.div`
-  /* align-items: center;
-  display: flex; */
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding-left: 16px;
+  }
 `;
 
 export const StickyBtn = styled.a`

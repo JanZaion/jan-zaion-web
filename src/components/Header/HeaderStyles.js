@@ -8,26 +8,14 @@ export const Container = styled.div`
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding-top: 2.5rem;
+  padding-left: 48px;
   margin: 0 auto;
   /* padding: 32px 48px 0; */
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    /* padding: 24px 48px 0; */
-
-    padding: 24px 16px 0;
-    flex-direction: column;
-  }
   @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 24px 16px 0;
     grid-template-columns: repeat(2, 0fr);
   }
-
-  /* @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  } */
 `;
 
 export const Div2 = styled.div`
@@ -131,6 +119,7 @@ export const SocialIcons = styled.a`
   padding: 8px;
   padding-left: 0px;
   &:hover {
+    padding-left: 8px;
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
