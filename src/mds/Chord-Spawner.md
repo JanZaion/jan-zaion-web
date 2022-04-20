@@ -1,8 +1,7 @@
 ---
 title: 'Chord Spawner'
 tag_line: "Chord Spawner is a Max for Live midi device for instant generation of chord progressions. Get inspired or create a chord progression directly inside Ableton Live's clips."
-products_image: '/images/1.png'
-cover_image: '/images/plug_plac.gif'
+cover_image: '/images/chordspawner_cover.png'
 repo: 'https://www.github.com/'
 # links are tricky, always put them in in absolute format if they lead to an external source, / at the end included
 download: 'https://www.google.com/'
@@ -16,13 +15,15 @@ The process is simple:
 2. Edit the setup of Chord Spawner to create the desired chord progression.
 3. Click "Render" to spawn the chord progression.
 
-![Alt text](/images/1.png?raw=false 'this is a title for a placeholder image')
+![one click chord progressions](/images/chs1.gif 'one click chord progressions')
 
 Generate basic chord progressions comprised of triads or 7th chords. Render desired progressions instantaniously, until you get the one that fits your track. Utilize advanced features to enrich the basic chord progression with bass notes, voicing that is out of the root position, advanced rhythm patterns and more.
 
 ## Text to Midi Chords
 
 The core feature of Chord Spawner is it's text to MIDI functionality. Chord Spawner uses [Scribbletune](https://scribbletune.com/) under the hood and loosly adopts it's pattern language. Within the UI, there are 2 text fields through which you control the chords that you want to spawn and the rhythm pattern of the chord progression.
+
+![text to MIDI](/images/chs2.gif 'text to MIDI')
 
 ### Chords Text Field
 
@@ -38,9 +39,13 @@ For full overview of the pattern language, visit this documentation page.
 
 When creating a fully randomized chord progression, like 'R R R R', it is possible to skew the randomly generated chords to a desirable direction. They can repeat themselves or not, take form of triads, 7th chords, or any of the advanced chords, or even follow a Chord Map. In Chord Map you can select which chord is allowed to follow which chord, ie if II is rendered, you can forbid III from following it.
 
+![multitude of parameters](/images/chs3.gif 'multitude of parameters')
+
 ## Voicing Algorhythms
 
 Chord progressions in their root position are nice, but moving notes around works better in many cases. Before jumping into Live's piano roll, you can use one of 24 voicing algorhythms to do this. Each algo transposes notes from chords an octave up or down to create a better sounding chord progression.
+
+![voicing algos](/images/chs4.gif 'voicing algos')
 
 ## Feature Overview
 
