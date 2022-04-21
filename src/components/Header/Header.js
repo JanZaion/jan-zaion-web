@@ -19,16 +19,16 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="/#tech">
+        <Link href="/#about">
           <NavLink>About</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://google.com">
+      <SocialIcons href="https://www.linkedin.com/in/zajicekjan/" target="blank">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://google.com">
+      <SocialIcons href="https://github.com/JanZaion" target="blank">
         <AiFillGithub size="3rem" />
       </SocialIcons>
     </Div3>

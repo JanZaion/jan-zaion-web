@@ -4,52 +4,17 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () => (
-  <Section id="tech">
+  <Section id="about">
     <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>About</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world. From Back-end To Design.
+      My name is Jan and I'm based in Brno, Czech Republic. Throughout my career, I've held various positions in the IT
+      industry. I have a passion for information technology, music theory and music in general. I love building simple
+      solutions to complex problems. Solutions that focus on one thing, but do that one thing really well.
       <br />
-      <br /> But I hate design
+      <br /> My native programming language is JavaScript. I've worked with various technologies including React, Next,
+      Node, Max and Max for Live.
     </SectionText>
-    {/* <List>
-      <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-    </List> */}
   </Section>
 );
 
