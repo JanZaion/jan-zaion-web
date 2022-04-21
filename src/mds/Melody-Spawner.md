@@ -28,15 +28,25 @@ The core feature of Melody Spawner is it's text to MIDI functionality. Melody Sp
 
 Notes can be typed in several formats: note names, numbers and R. Note names simply represent the desired note, ie C1, D#4, E3. Numbers denote the distance between the root note within the selected scale and the desired note, ie when inputing 1 while C Major is selected, D gets rendered. R stands for random, meaning if R is inputed to the notes text field, random note whithin the selected scale gets rendered. The randomization is further controlled by other parameters.
 
+Notes text field syntax:
+
+- Arabic numerals (0, 1, 2, 3...)
+- Note names (C1, D#2, F3, G4)
+- R (random note)
+
 ### Rhythm Pattern Text Field
 
 Rhythm pattern simply denots how long each note in the pattern is, how many spaces notes have between one another and how long these spaces are. 'xxxx' would render 4 notes of equal length, 'x_xxx' would render 4 notes where the first note is twice as long as the other 3, 'x-xxx' would render 4 notes with a space between the first and the second note.
 
-For full overview of the pattern language, visit this documentation page.
+Rhythm text field syntax:
+
+- 'x' represents a chord-on event
+- '-' represents pause
+- '\_' prolongues the previous character by 1 subdiv unit
 
 ## In-Key Melody Generation
 
-Melody Spawner can spawn a whole new melody out of selected parameters based on a fully randomized pattern like 'R R R R'. The key step is to select the right parameters to increase the likelyhood that the melody you desicre will be created. You can choose from dozens of scales in which you want the melody to be created. You can choose whether the notes in melody will be ascending, descending, or in any order, whether they will repeat themselves or not and how high or how low they can go. Through combination of these parameters, it is possible to create melodies of near infinite variety and get inspired very quickly.
+Melody Spawner can spawn a whole new melody out of selected parameters based on a fully randomized pattern like 'R R R R'. The key step is to select the right parameters to increase the likelyhood that the melody you desire will be created. You can choose from dozens of scales in which you want the melody to be created. You can choose whether the notes in melody will be ascending, descending, or in any order, whether they will repeat themselves or not and how high or how low they can go. Through combination of these parameters, it is possible to create melodies of near infinite variety and get inspired very quickly.
 
 ![n-Key Melody Generation](/images/ms3.gif 'n-Key Melody Generation')
 
@@ -60,3 +70,9 @@ Single melodic motif is nice, but it usually isn't enough. A melodic motif needs
 - Built-in algorhythms for melody development
 - 25 note presets and 22 rhythm presets
 - Ability to save and load a preset as .json file
+
+### Requirements
+
+- Ableton Live Suite 10/11 (with Max 8 or higher)
+- MacOS or Windows
+- Installation size: 197.0 KB

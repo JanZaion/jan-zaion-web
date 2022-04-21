@@ -27,13 +27,24 @@ The core feature of Chord Spawner is it's text to MIDI functionality. Chord Spaw
 
 ### Chords Text Field
 
-Chords can be typed in several formats: chord names, arabic and roman numerals and R. Chord names represent the desired chord, ie Cm is C minor, F#M is F# Major. Since Chord Spawner uses Tonal, there is a wide variety of chords supported. The full list of the supported chords is visible via Advanced Chords dropdown menu. Roman numerals work just as one would expect, ie i in C major is C, II in C major is D and so on. Arabic numbers work similarily, except there is no capitalization. Whether the chord is major or minor is simply decided by the selected scale. Finally, R denotes that a random chord from the selected scale is to be rendered.
+Chords can be typed in several formats: chord names, arabic and roman numerals and R. Chord names represent the desired chord, ie Cm is C minor, F#M is F# Major. Since Chord Spawner uses [Tonal](https://github.com/tonaljs/tonal), there is a wide variety of chords supported. The full list of the supported chords is visible via Advanced Chords dropdown menu. Roman numerals work just as one would expect, ie i in C major is C, II in C major is D and so on. Arabic numbers work similarily, except there is no capitalization. Whether the chord is major or minor is simply decided by the selected scale. Finally, R denotes that a random chord from the selected scale is to be rendered.
+
+Chord text field syntax:
+
+- Roman numerals (i, I, ii, II, iii, III, iv, IV, v, V, vi, VI, vii, VII)
+- Arabic numerals (0, 1, 2, 3, 4, 5, 6)
+- Chord names (CM, D#m, FMm, Gdim...)
+- R (random chord)
 
 ### Rhythm Pattern Text Field
 
 Rhythm pattern simply denots how long each chord in the progression is, how many spaces chords have between one another and how long these spaces are. 'xxxx' would render 4 chords of equal length, 'x_xxx' would render 4 chords where the first chord is twice as long as the other 3, 'x-xxx' would render 4 chords with a space between the first and the second chord.
 
-For full overview of the pattern language, visit this documentation page.
+Rhythm text field syntax:
+
+- 'x' represents a chord-on event
+- '-' represents pause
+- '\_' prolongues the previous character by 1 subdiv unit
 
 ## Random Chord Generation with Multitude of Parameters
 
@@ -43,7 +54,7 @@ When creating a fully randomized chord progression, like 'R R R R', it is possib
 
 ## Voicing Algorhythms
 
-Chord progressions in their root position are nice, but moving notes around works better in many cases. Before jumping into Live's piano roll, you can use one of 24 voicing algorhythms to do this. Each algo transposes notes from chords an octave up or down to create a better sounding chord progression.
+Chord progressions in their root position are nice, but moving notes around sounds better in many cases. Before jumping into Live's piano roll, you can use one of 24 voicing algorhythms to do this. Each algo transposes notes from chords an octave up or down to create a better sounding chord progression.
 
 ![voicing algos](/images/chs4.gif 'voicing algos')
 
@@ -60,4 +71,4 @@ Chord progressions in their root position are nice, but moving notes around work
 
 - Ableton Live Suite 10/11 (with Max 8 or higher)
 - MacOS or Windows
-- Installation size: 44.0 KB
+- Installation size: 225.0 KB

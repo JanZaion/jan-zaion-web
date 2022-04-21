@@ -13,8 +13,7 @@ export const projects = [
   },
   {
     title: 'MS to Beats',
-    description:
-      'The purpose of this device is to help producers to precisely time parameters displayed in milliseconds and seconds. It aims to do so by converting the millisecond (or second) value to how much beats such a value represents with the current BPM of the Live set. Hence the title MS (milliseconds) to Beats.',
+    description: 'A simple plugin that converts milliseconds to beats and vice versa in real time.',
     image: '/images/3.jpg',
   },
 ];
