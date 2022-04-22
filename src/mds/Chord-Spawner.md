@@ -1,7 +1,7 @@
 ---
 title: 'Chord Spawner'
 tag_line: "Chord Spawner is a Max for Live midi device for instant generation of chord progressions. Get inspired or create a chord progression directly inside Ableton Live's clips."
-cover_image: '/images/chordspawner_cover.png'
+cover_image: '/images/chordspawner_cover.PNG'
 repo: 'https://www.github.com/'
 # links are tricky, always put them in in absolute format if they lead to an external source, / at the end included
 download: 'https://www.google.com/'
