@@ -10,7 +10,6 @@ export const Container = styled.div`
   padding-top: 2.5rem;
   padding-left: 48px;
   margin: 0 auto;
-  /* padding: 32px 48px 0; */
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 24px 16px 0;
