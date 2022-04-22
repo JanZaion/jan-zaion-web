@@ -3,7 +3,7 @@ import { StickyBar, StickyBtn, BtnCont } from './StickyStyles';
 const Sticky = ({ repo, download, sticky }) => (
   <StickyBar sticky>
     {download ? (
-      <StickyBtn href={download} target="_blank">
+      <StickyBtn href={download} target="about:blank">
         Download
       </StickyBtn>
     ) : (
