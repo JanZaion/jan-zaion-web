@@ -6,21 +6,18 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
-  <>
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Hi, I am Jan.
-          <br />I develop software
-        </SectionTitle>
-        <SectionText>{'< Web / JavaScript / Max for Live >'}</SectionText>
-
-        <Button onClick={props.handleClick}>
-          <Link href="/#projects">Learn More</Link>
-        </Button>
-      </LeftSection>
-    </Section>
-  </>
+  <Section row nopadding>
+    <LeftSection>
+      <SectionTitle main center>
+        Hi, I am Jan.
+        <br />I develop software
+      </SectionTitle>
+      <SectionText>{'< Web / JavaScript / Max for Live >'}</SectionText>
+      <Link href="/#projects">
+        <Button onClick={props.handleClick}>Learn More</Button>
+      </Link>
+    </LeftSection>
+  </Section>
 );
 
 export default Hero;
