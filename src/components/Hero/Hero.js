@@ -13,8 +13,8 @@ const Hero = (props) => (
         <br />I develop software
       </SectionTitle>
       <SectionText>{'< Web / JavaScript / Max for Live >'}</SectionText>
-      <Link href="/#projects">
-        <Button onClick={props.handleClick}>Learn More</Button>
+      <Link href="/#contact">
+        <Button onClick={props.handleClick}>Get in touch</Button>
       </Link>
     </LeftSection>
   </Section>

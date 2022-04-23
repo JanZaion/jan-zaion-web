@@ -4,6 +4,7 @@ import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import Contact from '../components/Contact/Contact';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       </Section>
       <Projects />
       <Technologies />
+      <Contact />
     </Layout>
   );
 };
