@@ -1,6 +1,6 @@
-import { StickyBar, StickyBtn, BtnCont } from './StickyStyles';
+import { StickyBar, StickyBtn } from './StickyStyles';
 
-const Sticky = ({ repo, download, sticky }) => (
+const Sticky = ({ repo, download }) => (
   <StickyBar sticky>
     {download ? (
       <StickyBtn href={download} target="about:blank">

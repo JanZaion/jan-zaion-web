@@ -24,12 +24,7 @@ export const Div2 = styled.div`
   gap: 1.5rem;
   justify-content: flex-start;
 
-  /* @media ${(props) => props.theme.breakpoints.md} {
-    padding: 24px 48px 0;
-  } */
-
   @media ${(props) => props.theme.breakpoints.sm} {
-    /* padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')}; */
     padding: 0;
     grid-area: 2 / 1 / 3 / 5;
   }
@@ -42,12 +37,10 @@ export const Div3 = styled.div`
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
-    /* grid-area: 1 / 4 / 2 / 6; */
     grid-area: 1 / 1 / 1 / 1;
   }
 `;
 
-// Navigation Links
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
@@ -58,12 +51,8 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
-  /* @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
-  } */
 `;
 
-/// DropDown Contact
 export const ContactDropDown = styled.button`
   border: none;
   display: flex;
@@ -108,8 +97,6 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
     width: 15px;
   }
 `;
-
-// Social Icons
 
 export const SocialIcons = styled.a`
   transition: 0.3s ease;
