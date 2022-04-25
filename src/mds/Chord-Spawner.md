@@ -4,7 +4,7 @@ tag_line: "Chord Spawner is a Max for Live midi device for instant generation of
 cover_image: '/images/chordspawner_cover.PNG'
 repo: 'https://github.com/JanZaion/chord-spawner/'
 # links are tricky, always put them in in absolute format if they lead to an external source, / at the end included
-download: 'https://maxforlive.com/library/device.php?id=8101/'
+download: 'https://maxforlive.com/library/device/8101/chord-spawner/'
 ---
 
 ## Instant Chord Progressions
