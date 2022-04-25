@@ -11,7 +11,7 @@ const Sticky = ({ repo, download }) => (
     )}
     {repo ? (
       <StickyBtn href={repo} target="_blank">
-        Repo
+        Github Repo
       </StickyBtn>
     ) : (
       ''
