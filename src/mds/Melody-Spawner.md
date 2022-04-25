@@ -75,4 +75,4 @@ Single melodic motif is nice, but it usually isn't enough. A melodic motif needs
 
 - Ableton Live Suite 10/11 (with Max 8 or higher)
 - MacOS or Windows
-- Installation size: 197.0 KB
+- Installation size: 1.31 MB
