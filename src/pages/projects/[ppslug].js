@@ -6,7 +6,7 @@ import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
 import ProductContent from '../../components/ProductContent/ProductContent';
 
-export default function DocuPage({ frontmatter: { title, tag_line, cover_image, repo, download }, content }) {
+export default function DocuPage({ frontmatter: { title, tag_line, cover_image, repo, download }, content, head }) {
   return (
     <Layout>
       <ProductHero title={title} tag_line={tag_line} cover_image={cover_image} />
@@ -36,9 +36,12 @@ export async function getStaticProps({ params: { ppslug } }) {
   const markdownWithMeta = fs.readFileSync(path.join('src/mds', ppslug + '.md'), 'utf-8');
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
+  const { metaTitle, metaDescription, metaKeywords } = frontmatter;
+  const head = { metaTitle, metaDescription, metaKeywords };
 
   return {
     props: {
+      head,
       frontmatter,
       ppslug,
       content,

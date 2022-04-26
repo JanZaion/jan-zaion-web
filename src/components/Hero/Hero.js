@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
@@ -13,9 +12,9 @@ const Hero = (props) => (
         <br />I develop software
       </SectionTitle>
       <SectionText>{'< Web / JavaScript / Max for Live >'}</SectionText>
-      <Link href="/#contact">
-        <Button onClick={props.handleClick}>Get in touch</Button>
-      </Link>
+      <Button onClick={props.handleClick} destination={'/#contact'}>
+        Get in touch
+      </Button>
     </LeftSection>
   </Section>
 );

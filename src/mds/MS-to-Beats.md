@@ -4,6 +4,9 @@ tag_line: 'A simple plugin that converts milliseconds to beats and vice versa in
 cover_image: '/images/ms_to_beats_cover.PNG'
 repo: 'https://github.com/JanZaion/MS-to-Beats/'
 download: 'https://maxforlive.com/library/device/6978/ms-to-beats/'
+metaTitle: 'MS to Beats'
+metaDescription: 'A simple plugin that converts milliseconds to beats and vice versa in real time..'
+metaKeywords: 'Max, Max for Live, Utility music production device'
 ---
 
 ## MS to Beats
