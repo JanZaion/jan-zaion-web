@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
           'I am Jan Zaion, a JavaScript developer with passion for technology and music. Contact me if you are interested in cooperation.',
         metaKeywords: 'JavaScript, React, Next, Node, Max, Max for Live',
       });
-  // const { metaTitle, metaDescription, metaKeywords } = pageProps.head
+
   const { metaTitle, metaDescription, metaKeywords } = headData;
 
   return (
