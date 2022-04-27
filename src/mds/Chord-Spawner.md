@@ -74,4 +74,4 @@ Chord progressions in their root position are nice, but moving notes around soun
 
 - Ableton Live Suite 10/11 (with Max 8 or higher)
 - MacOS or Windows
-- Installation size: 1.44 MB
+- Installation size: 827.0 KB

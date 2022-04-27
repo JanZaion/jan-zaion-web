@@ -18,10 +18,8 @@ export const Container = styled.div`
 `;
 
 export const Div2 = styled.div`
-  grid-area: 1 / 1 / 2 / 5;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   justify-content: flex-start;
 
   @media ${(props) => props.theme.breakpoints.sm} {
