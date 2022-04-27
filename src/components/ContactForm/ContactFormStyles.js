@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const Form = styled.form`
-  input,
-  textarea {
-    width: 280px;
+  display: grid;
+  grid-row-gap: 10px;
+  width: 460px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
   }
 
   textarea {
@@ -11,6 +13,7 @@ export const Form = styled.form`
   }
 
   button {
+    width: 100px;
     color: #d4c0c0;
     font-size: 1.6rem;
     padding: 1rem 1.5rem;
@@ -27,6 +30,23 @@ export const Form = styled.form`
   }
 `;
 
-export const Diver = styled.div`
-  margin-bottom: 1vh;
+export const Deets = styled.div`
+  display: grid;
+  grid-column-gap: 10px;
+`;
+
+export const Name = styled.input`
+  grid-area: 1 / 1 / 2 / 2;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+`;
+
+export const Email = styled.input`
+  grid-area: 1 / 2 / 2 / 2;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 2 / 1 / 2 / 2;
+    margin-top: 10px;
+  }
 `;
