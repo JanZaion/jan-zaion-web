@@ -1,5 +1,10 @@
 export const projects = [
   {
+    title: 'Interactive Beats',
+    description: 'Interactive Beats are a browser based sequencer that will make you feel like the Loop Daddy himself.',
+    image: '/images/Interactive_Beats_thumb.webp',
+  },
+  {
     title: 'Melody Spawner',
     description:
       "Melody Spawner is a Max for Live MIDI device for generation and development of monophonic melodies. Get inspired or create a melody outright directly inside Ableton Live's clips.",
