@@ -1,11 +1,11 @@
 ---
 title: 'Interactive Beats'
-tag_line: 'Interactive Beats are a browser based sequencer that will make you feel like the Loop Daddy himself.'
+tag_line: 'Interactive Beats is a browser based sequencer that will make you feel like the Loop Daddy himself.'
 cover_image: '/images/Interactive_Beats_cover.webp'
 repo: 'https://github.com/JanZaion/interactivebeats/'
 download: 'https://janzaion.github.io/interactivebeats/'
 metaTitle: 'Interactive Beats'
-metaDescription: 'Interactive Beats are a browser based sequencer that will make you feel like the Loop Daddy himself.'
+metaDescription: 'Interactive Beats is a browser based sequencer that will make you feel like the Loop Daddy himself.'
 metaKeywords: 'Interactive music'
 ---
 
@@ -15,7 +15,7 @@ I've been using Ableton Live for a few years now. I love the software and I thin
 
 ![session view](/images/session_view.webp 'session view')
 
-In an effort to market Live, folks at Ableton made an educational site learningmusic.ableton.com. The sequencer right at the homepage that works like a simplified & streamlined version of the session view is what inspired me to create Interactive Beats. After months spent developing [Chord Spawner](https://janzaion.pro/projects/Chord-Spawner) and [Melody Spawner](https://janzaion.pro/projects/Melody-Spawner), Max for Live devices targeted at Live users, I figured I might as well create a piece of music software that 'normies' can enjoy. And thus, Interactive Beats were born.
+In an effort to market Live, folks at Ableton made an educational site learningmusic.ableton.com. The sequencer right at the homepage that works like a simplified & streamlined version of the session view is what inspired me to create Interactive Beats. After months spent developing [Chord Spawner](https://janzaion.pro/projects/Chord-Spawner) and [Melody Spawner](https://janzaion.pro/projects/Melody-Spawner), Max for Live devices targeted at Live users, I figured I might as well create a piece of music software that 'normies' can enjoy. And thus, Interactive Beats was born.
 
 ## Technologies
 
