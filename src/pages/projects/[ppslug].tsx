@@ -8,11 +8,13 @@ import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
 import { Layout } from '../../layout/Layout';
 
+import type { DocuPageProps } from './types';
+
 const DocuPage = ({
   frontmatter: { title, tag_line, cover_image, repo, download },
   content,
   head,
-}) => {
+}: DocuPageProps) => {
   return (
     <Layout>
       <ProductHero
