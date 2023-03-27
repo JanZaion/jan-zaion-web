@@ -1,5 +1,6 @@
-import Theme from '../styles/theme';
 import Head from 'next/head';
+
+import Theme from '../styles/theme';
 
 export default function App({ Component, pageProps }) {
   let headData;
@@ -22,8 +23,8 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>{metaTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={metaKeywords} />
+        <meta content={metaDescription} name="description" />
+        <meta content={metaKeywords} name="keywords" />
       </Head>
       <Theme>
         <Component {...pageProps} />

@@ -20,10 +20,12 @@
   },
   "include": [
     "next-env.d.ts",
+    ".eslintrc.js",
     "**/*.ts",
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".next"
   ]
 }
