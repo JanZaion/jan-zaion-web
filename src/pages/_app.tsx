@@ -1,8 +1,9 @@
+import type { AppType } from 'next/app';
 import Head from 'next/head';
 
 import Theme from '../styles/theme';
 
-export default function App({ Component, pageProps }) {
+const App: AppType = ({ Component, pageProps }) => {
   let headData;
   pageProps.head
     ? (headData = {
@@ -31,4 +32,6 @@ export default function App({ Component, pageProps }) {
       </Theme>
     </>
   );
-}
+};
+
+export default App;

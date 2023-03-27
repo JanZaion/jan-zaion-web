@@ -23,7 +23,15 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: '.',
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'unicorn', 'unused-imports', '@next/next', 'react-hooks'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'prettier',
+    'unicorn',
+    'unused-imports',
+    '@next/next',
+    'react-hooks',
+  ],
   rules: {
     'no-underscore-dangle': 0,
     'unicorn/no-null': 0,
@@ -33,7 +41,7 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'comma-dangle': 'off',
     'consistent-return': 'off',
-    'curly': ['error', 'multi-line'],
+    curly: ['error', 'multi-line'],
     'default-case': 'off',
     'function-paren-newline': 'off',
     'guard-for-in': 'off',
@@ -61,11 +69,18 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'alphabetize': {
+        alphabetize: {
           caseInsensitive: true,
           order: 'asc',
         },
-        'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
         'newlines-between': 'always',
       },
     ],
@@ -94,7 +109,6 @@ module.exports = {
     ],
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': ['error', { ignoreRestSiblings: true }],
-    'no-magic-numbers': 'off',
     'react/require-default-props': 'off',
     'react/function-component-definition': [
       'error',
@@ -123,10 +137,13 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {
-        project: ['packages/aco-einstein/tsconfig.json', 'packages/aco-logger/tsconfig.json'],
+        project: [
+          'packages/aco-einstein/tsconfig.json',
+          'packages/aco-logger/tsconfig.json',
+        ],
       },
     },
-    'react': {
+    react: {
       version: 'detect',
     },
   },
@@ -139,11 +156,19 @@ module.exports = {
     },
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
+      extends: [
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
     },
-    // {
-    //   files: ['*.ts', '*.tsx'],
-    //   singleQuote: true,
-    // },
+    {
+      files: [
+        'src/pages/_app.tsx',
+        'src/pages/_document.tsx',
+        'src/components/**/*.tsx',
+      ],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
+      },
+    },
   ],
 };

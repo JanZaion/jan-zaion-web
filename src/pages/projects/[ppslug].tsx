@@ -1,23 +1,33 @@
 import fs from 'fs';
 import path from 'path';
+
 import matter from 'gray-matter';
-import { Layout } from '../../layout/Layout';
+
+import ProductContent from '../../components/ProductContent/ProductContent';
 import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
-import ProductContent from '../../components/ProductContent/ProductContent';
+import { Layout } from '../../layout/Layout';
 
-export default function DocuPage({ frontmatter: { title, tag_line, cover_image, repo, download }, content, head }) {
+const DocuPage = ({
+  frontmatter: { title, tag_line, cover_image, repo, download },
+  content,
+  head,
+}) => {
   return (
     <Layout>
-      <ProductHero title={title} tag_line={tag_line} cover_image={cover_image} />
-      <Sticky repo={repo} download={download} sticky={true} />
+      <ProductHero
+        cover_image={cover_image}
+        tag_line={tag_line}
+        title={title}
+      />
+      <Sticky download={download} repo={repo} sticky />
       <ProductContent content={content} />
-      <Sticky repo={repo} download={download} />
+      <Sticky download={download} repo={repo} />
     </Layout>
   );
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths = () => {
   const files = fs.readdirSync(path.join('src/mds'));
 
   const paths = files.map((filename) => ({
@@ -30,10 +40,13 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({ params: { ppslug } }) {
-  const markdownWithMeta = fs.readFileSync(path.join('src/mds', ppslug + '.md'), 'utf-8');
+export const getStaticProps = ({ params: { ppslug } }) => {
+  const markdownWithMeta = fs.readFileSync(
+    path.join('src/mds', `${ppslug}.md`),
+    'utf8',
+  );
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
   const { metaTitle, metaDescription, metaKeywords } = frontmatter;
@@ -47,4 +60,6 @@ export async function getStaticProps({ params: { ppslug } }) {
       content,
     },
   };
-}
+};
+
+export default DocuPage;
