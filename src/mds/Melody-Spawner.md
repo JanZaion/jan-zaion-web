@@ -1,12 +1,11 @@
 ---
 title: 'Melody Spawner'
-tag_line: "Melody Spawner is a Max for Live MIDI device for generation and development of monophonic melodies. Get inspired or create a melody outright directly inside Ableton Live's clips."
-cover_image: '/images/melodyspawner_cover.PNG'
+tagLine: "Melody Spawner is a Max for Live MIDI device for generation and development of monophonic melodies. Get inspired or create a melody outright directly inside Ableton Live's clips."
+coverImage: '/images/melodyspawner_cover.PNG'
 repo: 'https://github.com/JanZaion/melody-spawner/'
 download: 'https://maxforlive.com/library/device/8100/melody-spawner/'
 metaTitle: 'Melody Spawner'
 metaDescription: "Melody Spawner is a Max for Live MIDI device for generation and development of monophonic melodies. Get inspired or create a melody outright directly inside Ableton Live's clips."
-metaKeywords: 'Max, Max for Live, MIDI, Melody, Music Generation, Generative Music'
 ---
 
 ## Instant Melodies

@@ -1,11 +1,16 @@
 export type DocuPageProps = {
   frontmatter: {
     title: string;
-    tag_line: string;
-    cover_image: string;
+    tagLine: string;
+    coverImageSource: string;
     repo: string;
     download: string;
   };
   content: string;
-  head: string;
+  head: HeadT;
+};
+
+export type HeadT = {
+  metaTitle: string;
+  metaDescription: string;
 };

@@ -2,30 +2,37 @@ import fs from 'fs';
 import path from 'path';
 
 import matter from 'gray-matter';
+import Head from 'next/head';
 
 import ProductContent from '../../components/ProductContent/ProductContent';
 import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
 import { Layout } from '../../layout/Layout';
 
-import type { DocuPageProps } from './types';
+import type { DocuPageProps, HeadT } from './types';
 
 const DocuPage = ({
-  frontmatter: { title, tag_line, cover_image, repo, download },
+  frontmatter: { title, tagLine, coverImageSource, repo, download },
   content,
   head,
 }: DocuPageProps) => {
   return (
-    <Layout>
-      <ProductHero
-        cover_image={cover_image}
-        tag_line={tag_line}
-        title={title}
-      />
-      <Sticky download={download} repo={repo} sticky />
-      <ProductContent content={content} />
-      <Sticky download={download} repo={repo} />
-    </Layout>
+    <>
+      <Head>
+        <title>{head.metaTitle}</title>
+        <meta content={head.metaDescription} name="description" />
+      </Head>
+      <Layout>
+        <ProductHero
+          coverImage={coverImageSource}
+          tagLine={tagLine}
+          title={title}
+        />
+        <Sticky download={download} repo={repo} sticky />
+        <ProductContent content={content} />
+        <Sticky download={download} repo={repo} />
+      </Layout>
+    </>
   );
 };
 
@@ -44,15 +51,19 @@ export const getStaticPaths = () => {
   };
 };
 
-export const getStaticProps = ({ params: { ppslug } }) => {
+export const getStaticProps = ({
+  params: { ppslug },
+}: {
+  params: { ppslug: string };
+}) => {
   const markdownWithMeta = fs.readFileSync(
     path.join('src/mds', `${ppslug}.md`),
     'utf8',
   );
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
-  const { metaTitle, metaDescription, metaKeywords } = frontmatter;
-  const head = { metaTitle, metaDescription, metaKeywords };
+  const { metaTitle, metaDescription } = frontmatter as HeadT;
+  const head = { metaTitle, metaDescription };
 
   return {
     props: {
