@@ -2,7 +2,7 @@ export type DocuPageProps = {
   frontmatter: {
     title: string;
     tagLine: string;
-    coverImageSource: string;
+    coverImage: string;
     repo: string;
     download: string;
   };

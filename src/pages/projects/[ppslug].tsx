@@ -12,7 +12,7 @@ import { Layout } from '../../layout/Layout';
 import type { DocuPageProps, HeadT } from './types';
 
 const DocuPage = ({
-  frontmatter: { title, tagLine, coverImageSource, repo, download },
+  frontmatter: { title, tagLine, coverImage, repo, download },
   content,
   head,
 }: DocuPageProps) => {
@@ -23,11 +23,7 @@ const DocuPage = ({
         <meta content={head.metaDescription} name="description" />
       </Head>
       <Layout>
-        <ProductHero
-          coverImage={coverImageSource}
-          tagLine={tagLine}
-          title={title}
-        />
+        <ProductHero coverImage={coverImage} tagLine={tagLine} title={title} />
         <Sticky download={download} repo={repo} sticky />
         <ProductContent content={content} />
         <Sticky download={download} repo={repo} />
