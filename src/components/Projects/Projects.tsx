@@ -3,7 +3,7 @@ import {
   Section,
   SectionDivider,
   SectionTitle,
-} from '../../styles/GlobalComponents';
+} from '../GlobalComponents/GlobalComponents';
 
 import {
   BlogCard,

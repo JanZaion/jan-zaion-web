@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
 import { marked } from 'marked';
 
-import { SectionDivider } from '../../styles/GlobalComponents';
+import { SectionDivider } from '../GlobalComponents/GlobalComponents';
 
 import { ProductContentContainer, ProductContentText } from './styled';
 import type { ProductContentProps } from './types';

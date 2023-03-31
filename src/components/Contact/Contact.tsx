@@ -2,7 +2,7 @@ import {
   Section,
   SectionDivider,
   SectionTitle,
-} from '../../styles/GlobalComponents';
+} from '../GlobalComponents/GlobalComponents';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Contact = () => (

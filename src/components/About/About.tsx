@@ -3,7 +3,7 @@ import {
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
+} from '../GlobalComponents/GlobalComponents';
 
 const About = () => (
   <Section id="about">

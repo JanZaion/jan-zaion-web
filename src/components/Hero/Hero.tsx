@@ -1,20 +1,23 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import BigButton from '../BigButton/BigButton';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from '../GlobalComponents/GlobalComponents';
 
-const Hero = (props) => (
-  <Section row nopadding>
+import { LeftSection } from './styled';
+
+const Hero = () => (
+  <Section nopadding row>
     <LeftSection>
-      <SectionTitle main center>
+      <SectionTitle center main>
         Hi, I am Jan.
         <br />I develop software
       </SectionTitle>
       <SectionText>{'< Web / JavaScript / Max for Live >'}</SectionText>
-      <Button onClick={props.handleClick} destination={'/#contact'}>
-        Get in touch
-      </Button>
+      <BigButton />
     </LeftSection>
   </Section>
 );

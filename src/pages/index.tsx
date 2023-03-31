@@ -3,7 +3,7 @@ import Contact from '../components/Contact/Contact';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+import { Section } from '../components/GlobalComponents/GlobalComponents';
 
 const Home = () => {
   return (

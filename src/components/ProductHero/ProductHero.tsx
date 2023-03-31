@@ -2,7 +2,7 @@ import {
   Section,
   SectionTitle,
   SectionText,
-} from '../../styles/GlobalComponents';
+} from '../GlobalComponents/GlobalComponents';
 
 import { ProductHeroImg } from './styled';
 import type { ProductHeroProps } from './types';
