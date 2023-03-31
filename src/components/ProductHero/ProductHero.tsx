@@ -3,9 +3,11 @@ import {
   SectionTitle,
   SectionText,
 } from '../../styles/GlobalComponents';
-import { ProductHeroImg } from './ProductHeroStyles';
 
-const ProductHero = ({ title, tagLine, coverImage }) => (
+import { ProductHeroImg } from './styled';
+import type { ProductHeroProps } from './types';
+
+const ProductHero = ({ title, tagLine, coverImage }: ProductHeroProps) => (
   <Section>
     <SectionTitle main>{title}</SectionTitle>
     <SectionText>{tagLine}</SectionText>

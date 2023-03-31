@@ -86,7 +86,7 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'no-confusing-arrow': 'off',
-    'no-magic-numbers': ['error', { ignore: [0, 1], ignoreArrayIndexes: true }],
+    'no-magic-numbers': 'off',
     'no-param-reassign': 'off',
     'no-shadow': 'off',
     'no-use-before-define': 'off',
@@ -95,18 +95,7 @@ module.exports = {
     'unicorn/no-array-reduce': 'off',
     'unicorn/prefer-module': 'off',
     'unicorn/prefer-node-protocol': 'off',
-    'unicorn/prevent-abbreviations': [
-      'error',
-      {
-        allowList: {
-          params: true,
-          props: true,
-          Props: true,
-          ref: true,
-          Ref: true,
-        },
-      },
-    ],
+    'unicorn/prevent-abbreviations': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'react/require-default-props': 'off',

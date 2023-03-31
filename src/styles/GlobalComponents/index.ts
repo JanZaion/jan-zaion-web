@@ -27,7 +27,11 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => (props.main ? '72px' : '56px')};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
@@ -137,7 +141,8 @@ export const SecondaryBtn = styled.button`
   &:active {
     background: #e0e4eb;
     border: 1px solid #304169;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
+      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -211,7 +216,9 @@ export const ButtonFront = styled.button`
   justify-content: center;
   cursor: pointer;
   box-shadow: ${({ disabled }) =>
-    disabled ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)' : 'none'};
+    disabled
+      ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)'
+      : 'none'};
 
   a {
     color: white;
@@ -225,13 +232,15 @@ export const ButtonFront = styled.button`
   }
   &:active {
     opacity: 1;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
+      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   &:disabled {
     background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
     opacity: 0.5;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
+      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

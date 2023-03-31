@@ -2,6 +2,7 @@ import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/styled';
+
 import {
   FooterWrapper,
   LinkColumn,
@@ -10,7 +11,7 @@ import {
   LinkTitle,
   SocialContainer,
   SocialIconsContainer,
-} from './FooterStyles';
+} from './styled';
 
 const Footer = () => {
   return (
@@ -26,7 +27,10 @@ const Footer = () => {
           <SocialIcons href="https://github.com/JanZaion" target="blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/zajicekjan/" target="blank">
+          <SocialIcons
+            href="https://www.linkedin.com/in/zajicekjan/"
+            target="blank"
+          >
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>

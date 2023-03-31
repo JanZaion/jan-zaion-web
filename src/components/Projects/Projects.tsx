@@ -1,3 +1,10 @@
+import { projects } from '../../constants/constants';
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from '../../styles/GlobalComponents';
+
 import {
   BlogCard,
   CardInfo,
@@ -8,18 +15,16 @@ import {
   TitleContent,
   UtilityList,
   Img,
-} from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+} from './styled';
 
 const Projects = () => (
   <Section id="projects">
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map((p, i) => {
+      {projects.map((p) => {
         return (
-          <BlogCard key={i}>
+          <BlogCard key={p.title}>
             <Img src={p.image} />
             <TitleContent>
               <HeaderThree>{p.title}</HeaderThree>
@@ -27,7 +32,9 @@ const Projects = () => (
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <UtilityList>
-              <ExternalLinks href={`/projects/${p.title.split(' ').join('-')}`}>Learn more</ExternalLinks>
+              <ExternalLinks href={`/projects/${p.title.split(' ').join('-')}`}>
+                Learn more
+              </ExternalLinks>
             </UtilityList>
           </BlogCard>
         );

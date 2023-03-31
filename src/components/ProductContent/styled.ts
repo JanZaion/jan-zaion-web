@@ -61,7 +61,11 @@ export const ProductContentText = styled.div`
 
   h2,
   h3 {
-    background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+    background: linear-gradient(
+      121.57deg,
+      #ffffff 18.77%,
+      rgba(255, 255, 255, 0.66) 60.15%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

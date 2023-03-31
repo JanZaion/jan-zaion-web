@@ -1,7 +1,8 @@
 export const projects = [
   {
     title: 'Interactive Beats',
-    description: 'Interactive Beats are a browser based sequencer that will make you feel like the Loop Daddy himself.',
+    description:
+      'Interactive Beats are a browser based sequencer that will make you feel like the Loop Daddy himself.',
     image: '/images/Interactive_Beats_thumb.webp',
   },
   {
@@ -18,7 +19,8 @@ export const projects = [
   },
   {
     title: 'MS to Beats',
-    description: 'A simple plugin that converts milliseconds to beats and vice versa in real time.',
+    description:
+      'A simple plugin that converts milliseconds to beats and vice versa in real time.',
     image: '/images/ms_to_beats_thumb.png',
   },
 ];
