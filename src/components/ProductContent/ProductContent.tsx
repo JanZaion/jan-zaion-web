@@ -1,26 +1,20 @@
 /* eslint-disable react/no-danger */
-import { marked } from 'marked';
-
-import { SectionDivider } from '../GlobalComponents/GlobalComponents';
+import { marked, Renderer } from 'marked';
 
 import { ProductContentContainer, ProductContentText } from './styled';
 import type { ProductContentProps } from './types';
 
 const ProductContent = ({ content }: ProductContentProps) => {
-  const parsedContend = marked(content).split(/(<h2+)/g);
-  const sectionized = parsedContend
-    .filter((string) => string !== '')
-    .map((string) => {
-      return string === '<h2'
-        ? `<div style=${SectionDivider.componentStyle.rules[0]}></div>${string}`
-        : string; // root rules of a styled component, media querries are not accessed
-    })
-    .join(' ');
+  const renderer = new Renderer();
+  renderer.image = (href: string, title: string) => {
+    return `<img src="${href}" title="${title}" alt="${title}" loading="lazy" />`;
+  };
+  const parsedContent = marked(content, { renderer });
 
   return (
     <ProductContentContainer>
       <ProductContentText>
-        <div dangerouslySetInnerHTML={{ __html: marked(sectionized) }} />
+        <div dangerouslySetInnerHTML={{ __html: marked(parsedContent) }} />
       </ProductContentText>
     </ProductContentContainer>
   );

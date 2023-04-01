@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProductContentContainer = styled.section`
+export const ProductContentContainer = styled.article`
   /* display: ${(props) => (props.grid ? 'grid' : 'flex')}; */
   /* flex-direction: ${(props) => (props.row ? 'row' : 'column')}; */
   padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
@@ -73,6 +73,15 @@ export const ProductContentText = styled.div`
   h2 {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
+  }
+
+  h2::before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 3px;
+    background-color: #fff;
+    background: #d0bb57;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

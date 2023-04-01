@@ -11,7 +11,7 @@ const ProductHero = ({ title, tagLine, coverImage }: ProductHeroProps) => (
   <Section>
     <SectionTitle main>{title}</SectionTitle>
     <SectionText>{tagLine}</SectionText>
-    <StyledImg alt={title} loading="lazy" src={coverImage} />
+    <StyledImg alt={title} loading="lazy" src={coverImage} title={title} />
   </Section>
 );
 

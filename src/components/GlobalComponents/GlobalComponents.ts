@@ -21,6 +21,7 @@ export const Section = styled.section`
   }
 `;
 
+// make into h1 for blog posts and h2 as a separate component for other stuff
 export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? '65px' : '56px')};
