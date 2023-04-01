@@ -2,9 +2,14 @@ import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { Section } from '../GlobalComponents/GlobalComponents';
-import { SocialIcons } from '../Header/styled';
 
-import { LinkItem, LinkList, LinkTitle } from './styled';
+import {
+  SocialIcons,
+  EmailContainer,
+  LinkTitle,
+  LinkList,
+  LinkContainer,
+} from './styled';
 
 const Footer = () => {
   return (
@@ -12,19 +17,21 @@ const Footer = () => {
       <Section>
         <LinkList>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:jan@janzaion.pro">jan@janzaion.pro</LinkItem>
+          <EmailContainer href="mailto:jan@janzaion.pro">
+            jan@janzaion.pro
+          </EmailContainer>
         </LinkList>
-        <div>
-          <SocialIcons href="https://github.com/JanZaion" target="blank">
+        <LinkContainer>
+          <SocialIcons href="https://github.com/JanZaion" target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
           <SocialIcons
             href="https://www.linkedin.com/in/zajicekjan/"
-            target="blank"
+            target="_blank"
           >
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-        </div>
+        </LinkContainer>
       </Section>
     </footer>
   );

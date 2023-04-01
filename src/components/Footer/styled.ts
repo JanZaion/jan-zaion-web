@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-export const LinkItem = styled.a`
+export const EmailContainer = styled.a`
   font-size: 18px;
   line-height: 30px;
   color: ${(props) => props.theme.colors.title};
-  margin-bottom: 16px;
   transition: 0.3s ease;
   position: relative;
   left: 0;
@@ -19,6 +18,25 @@ export const LinkItem = styled.a`
     line-height: 28px;
     display: flex;
   }
+`;
+
+export const SocialIcons = styled.a`
+  transition: 0.3s ease;
+  color: ${(props) => props.theme.colors.title};
+  border-radius: 50px;
+  padding: 8px;
+  padding-left: 0px;
+
+  &:hover {
+    padding-left: 8px;
+    background-color: ${(props) => props.theme.colors.title};
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;
+
+export const LinkContainer = styled.div`
+  display: flex;
 `;
 
 export const LinkList = styled.div`

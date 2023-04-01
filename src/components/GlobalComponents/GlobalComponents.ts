@@ -36,7 +36,7 @@ export const MainTitle = styled.h1`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 28px;
     line-height: 32px;
-    padding: 16px 0 8px;
+    padding: 40px 0 8px;
   }
 `;
 
