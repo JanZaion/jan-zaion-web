@@ -11,6 +11,8 @@ declare module 'styled-components' {
       title: string;
       text: string;
       background: string;
+      divider: string;
+      cardHeader: string;
     };
 
     breakpoints: {

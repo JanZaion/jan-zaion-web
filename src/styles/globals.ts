@@ -48,8 +48,8 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     width: 64px;
     height: 3px;
-    background-color: #fff;
-    background: #d0bb57;
+    background: ${(props) => props.theme.colors.divider}; 
+    margin-bottom: 12px;
   }
 
   p {

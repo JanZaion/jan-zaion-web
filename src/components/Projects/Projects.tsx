@@ -6,34 +6,36 @@ import {
   CardInfo,
   ExternalLinks,
   GridContainer,
-  HeaderThree,
-  Hr,
-  TitleContent,
+  CardHeader,
   UtilityList,
   Img,
+  CardInfoContainer,
 } from './styled';
 
 const Projects = () => (
   <Section id="projects">
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle>Projects</SectionTitle>
     <GridContainer>
-      {projects.map((p) => {
-        return (
-          <BlogCard key={p.title}>
-            <Img src={p.image} />
-            <TitleContent>
-              <HeaderThree>{p.title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
-            <UtilityList>
-              <ExternalLinks href={`/projects/${p.title.split(' ').join('-')}`}>
-                Learn more
-              </ExternalLinks>
-            </UtilityList>
-          </BlogCard>
-        );
-      })}
+      {projects.map(({ title, image, description }) => (
+        <BlogCard key={title}>
+          <Img
+            alt={`${title} snippet`}
+            loading="lazy"
+            src={image}
+            title={`${title} snippet`}
+          />
+          <CardInfoContainer>
+            <CardHeader>{title}</CardHeader>
+            <CardInfo className="card-info">{description}</CardInfo>
+          </CardInfoContainer>
+          {/* replace with button once available */}
+          <UtilityList>
+            <ExternalLinks href={`/projects/${title.split(' ').join('-')}`}>
+              Learn more
+            </ExternalLinks>
+          </UtilityList>
+        </BlogCard>
+      ))}
     </GridContainer>
   </Section>
 );

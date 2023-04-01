@@ -9,6 +9,8 @@ export default {
     title: '#e8e6e6',
     text: 'rgba(255, 255, 255, 0.65)',
     background: '#0F1624',
+    divider: 'teal',
+    cardHeader: '#9cc9e3',
     // primary1: 'hsl(204,23.8%,95.9%)',
     // accent1: 'hsl(34.9,98.6%,72.9%)',
     // background2: 'hsl(232.7,27.3%,23.7%)',
