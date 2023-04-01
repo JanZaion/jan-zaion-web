@@ -1,13 +1,13 @@
 import { projects } from '../../constants/constants';
 import { Section, SectionTitle } from '../GlobalComponents/GlobalComponents';
+import { LinkButton } from '../LinkButton/LinkButton';
 
 import {
   BlogCard,
   CardInfo,
-  ExternalLinks,
   GridContainer,
   CardHeader,
-  UtilityList,
+  ButtonContainer,
   Img,
   CardInfoContainer,
 } from './styled';
@@ -29,11 +29,13 @@ const Projects = () => (
             <CardInfo className="card-info">{description}</CardInfo>
           </CardInfoContainer>
           {/* replace with button once available */}
-          <UtilityList>
-            <ExternalLinks href={`/projects/${title.split(' ').join('-')}`}>
+          <ButtonContainer>
+            <LinkButton
+              href={`/projects/${title.split(' ').join('-')}` as unknown as URL}
+            >
               Learn more
-            </ExternalLinks>
-          </UtilityList>
+            </LinkButton>
+          </ButtonContainer>
         </BlogCard>
       ))}
     </GridContainer>

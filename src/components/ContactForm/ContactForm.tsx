@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-import { Form, Field, Deets } from './styled';
+import { Button } from '../Button/styled';
+
+import { Form, Field, Deets, ButtonContainer } from './styled';
 
 const FORM_ENDPOINT =
   'https://public.herotofu.com/v1/e14daf50-c31f-11ec-a557-034a17e2da28';
@@ -14,7 +16,7 @@ const ContactForm = () => {
   };
 
   if (submitted) {
-    return <div>Thank you for your message, I&aposll be in touch soon.</div>;
+    return <p>Thank you for your message, I will be in touch soon.</p>;
   }
 
   return (
@@ -22,14 +24,16 @@ const ContactForm = () => {
       action={FORM_ENDPOINT}
       method="POST"
       onSubmit={handleSubmit}
-      target="_blank"
+      target="about:blank"
     >
       <Deets>
         <Field name="name" placeholder="Your name" required type="text" />
         <Field name="email" placeholder="Email" required type="email" />
       </Deets>
       <textarea name="message" placeholder="Your message" required />
-      <button type="submit">Send</button>
+      <ButtonContainer>
+        <Button type="submit">Send</Button>
+      </ButtonContainer>
     </Form>
   );
 };

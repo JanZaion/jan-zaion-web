@@ -14,6 +14,7 @@ declare module 'styled-components' {
       divider: string;
       cardHeader: string;
       link: string;
+      button: string;
     };
 
     breakpoints: {

@@ -1,24 +1,14 @@
 import styled from 'styled-components';
 
 export const ProductContentContainer = styled.article`
-  /* display: ${(props) => (props.grid ? 'grid' : 'flex')}; */
-  /* flex-direction: ${(props) => (props.row ? 'row' : 'column')}; */
-  padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
-  margin: 0 auto;
-  box-sizing: content-box;
-  /* overflow: hidden; */
-  /* grid-template-columns: 1fr 1fr; */
+  padding: 32px 48px 0;
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
-    flex-direction: column;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
-
-    /* width: calc(100vw - 32px); */
-    flex-direction: column;
+    padding: 16px 16px 0;
   }
 `;
 
@@ -31,13 +21,13 @@ export const ProductContentText = styled.div`
   p,
   ul,
   ol {
-    color: rgba(255, 255, 255, 0.7);
+    color: ${(props) => props.theme.colors.text};
     margin-bottom: 1em;
   }
 
   ul,
   ol {
-    color: rgba(255, 255, 255, 0.7);
+    color: ${(props) => props.theme.colors.text};
     margin-bottom: 1em;
     margin-left: 4rem;
   }

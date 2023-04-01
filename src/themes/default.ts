@@ -12,6 +12,7 @@ export default {
     divider: 'teal',
     cardHeader: '#9cc9e3',
     link: 'orange',
+    button: '#45134a',
     // primary1: 'hsl(204,23.8%,95.9%)',
     // accent1: 'hsl(34.9,98.6%,72.9%)',
     // background2: 'hsl(232.7,27.3%,23.7%)',

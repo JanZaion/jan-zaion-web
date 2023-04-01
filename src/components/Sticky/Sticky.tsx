@@ -1,17 +1,19 @@
-import { StickyBar, StickyBtn } from './styled';
+import { LinkButton } from '../LinkButton/LinkButton';
+
+import { StickyBar } from './styled';
 import type { StickyProps } from './types';
 
 const Sticky = ({ repo, download }: StickyProps) => (
-  <StickyBar sticky>
+  <StickyBar>
     {download && (
-      <StickyBtn href={download} target="about:blank">
+      <LinkButton href={download} target="_blank">
         Download
-      </StickyBtn>
+      </LinkButton>
     )}
     {repo && (
-      <StickyBtn href={repo} target="_blank">
+      <LinkButton href={repo} target="_blank">
         Github Repo
-      </StickyBtn>
+      </LinkButton>
     )}
   </StickyBar>
 );

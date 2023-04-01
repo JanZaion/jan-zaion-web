@@ -1,4 +1,4 @@
 export type StickyProps = {
-  repo?: string;
-  download?: string;
+  repo?: URL;
+  download?: URL;
 };

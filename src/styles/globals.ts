@@ -18,7 +18,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: ${(props) => props.theme.fonts.main};
-    font-size: 1.6rem;
+    font-size: 1rem;
+    /* font-size: 1.6rem; */
     background: ${(props) => props.theme.colors.background};
   }
 
