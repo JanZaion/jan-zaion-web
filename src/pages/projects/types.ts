@@ -3,8 +3,8 @@ export type DocuPageProps = {
     title: string;
     tagLine: string;
     coverImage: string;
-    repo: string;
-    download: string;
+    repo: URL;
+    download: URL;
   };
   content: string;
   head: HeadT;

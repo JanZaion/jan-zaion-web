@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  color: #fff;
-  background: ${(props) => props.theme.colors.button};
-  border: 3px solid rgba(255, 255, 255, 0.33);
-  border-radius: 15px;
+  color: ${(props) => props.theme.colors.title};
+  background: ${(props) => props.theme.colors.background};
+  border: 2px solid;
+  border-color: ${(props) => props.theme.colors.title};
+  border-radius: 16px;
   padding: 16px 24px;
   font-size: 1.6rem;
   line-height: 16px;
@@ -16,9 +17,9 @@ export const Button = styled.button`
   }
 
   &:hover {
-    color: #0f1624;
-    background: #fff;
-    border: 3px solid #fff;
+    color: ${(props) => props.theme.colors.background};
+    background: ${(props) => props.theme.colors.title};
+    border-color: ${(props) => props.theme.colors.background};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {

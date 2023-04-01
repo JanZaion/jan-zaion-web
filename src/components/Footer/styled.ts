@@ -25,12 +25,11 @@ export const SocialIcons = styled.a`
   color: ${(props) => props.theme.colors.title};
   border-radius: 50px;
   padding: 8px;
-  padding-left: 0px;
 
   &:hover {
     padding-left: 8px;
-    background-color: ${(props) => props.theme.colors.title};
     transform: scale(1.2);
+    background-color: ${(props) => props.theme.colors.link};
     cursor: pointer;
   }
 `;

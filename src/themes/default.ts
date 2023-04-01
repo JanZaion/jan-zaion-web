@@ -1,10 +1,9 @@
 export default {
-  // Temp fonts
   fonts: {
     title: 'Space Grotesk, sans-serif',
     main: 'Space Grotesk, sans-serif',
   },
-  // Colors for layout
+
   colors: {
     title: '#e8e6e6',
     text: 'rgba(255, 255, 255, 0.65)',
@@ -13,11 +12,8 @@ export default {
     cardHeader: '#9cc9e3',
     link: 'orange',
     button: '#45134a',
-    // primary1: 'hsl(204,23.8%,95.9%)',
-    // accent1: 'hsl(34.9,98.6%,72.9%)',
-    // background2: 'hsl(232.7,27.3%,23.7%)',
   },
-  // Breakpoints for responsive design
+
   breakpoints: {
     xs: 'screen and (max-width: 350px)',
     sm: 'screen and (max-width: 640px)',

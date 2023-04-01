@@ -24,7 +24,7 @@ const DocuPage = ({
       </Head>
       <Layout>
         <ProductHero coverImage={coverImage} tagLine={tagLine} title={title} />
-        <Sticky download={download} repo={repo} sticky />
+        <Sticky download={download} repo={repo} />
         <ProductContent content={content} />
         <Sticky download={download} repo={repo} />
       </Layout>
