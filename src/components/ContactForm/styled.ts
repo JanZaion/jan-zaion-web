@@ -33,20 +33,14 @@ export const Form = styled.form`
 export const Deets = styled.div`
   display: grid;
   grid-column-gap: 10px;
-`;
-
-export const Name = styled.input`
-  grid-area: 1 / 1 / 2 / 2;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-template-columns: 1fr;
   }
 `;
 
-export const Email = styled.input`
-  grid-area: 1 / 2 / 2 / 2;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 1 / 2 / 2;
-    margin-top: 10px;
-  }
+export const Field = styled.input`
+  height: 40px;
 `;

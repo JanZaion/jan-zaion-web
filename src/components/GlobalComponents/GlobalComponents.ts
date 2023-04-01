@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   padding: 32px 48px 0;
-  max-width: 1040px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 16px 16px 0;

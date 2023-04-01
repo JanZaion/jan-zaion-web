@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Form, Name, Email, Deets } from './styled';
+import { Form, Field, Deets } from './styled';
 
 const FORM_ENDPOINT =
   'https://public.herotofu.com/v1/e14daf50-c31f-11ec-a557-034a17e2da28';
@@ -25,8 +25,8 @@ const ContactForm = () => {
       target="_blank"
     >
       <Deets>
-        <Name name="name" placeholder="Your name" required type="text" />
-        <Email name="email" placeholder="Email" required type="email" />
+        <Field name="name" placeholder="Your name" required type="text" />
+        <Field name="email" placeholder="Email" required type="email" />
       </Deets>
       <textarea name="message" placeholder="Your message" required />
       <button type="submit">Send</button>
