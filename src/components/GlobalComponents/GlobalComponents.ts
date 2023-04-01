@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding: 32px 48px 0;
+  margin-bottom: 32px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 16px 16px 0;
+    margin-bottom: 16px;
   }
 `;
 

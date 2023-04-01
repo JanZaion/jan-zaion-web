@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding-top: 2.5rem;
-  padding-left: 48px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 24px 16px 0;
     grid-template-columns: repeat(2, 0fr);
   }
 `;

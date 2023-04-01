@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
 import { marked, Renderer } from 'marked';
 
-import { ProductContentContainer, ProductContentText } from './styled';
+import { ProductContentText } from './styled';
 import type { ProductContentProps } from './types';
 
 const ProductContent = ({ content }: ProductContentProps) => {
@@ -12,11 +12,11 @@ const ProductContent = ({ content }: ProductContentProps) => {
   const parsedContent = marked(content, { renderer });
 
   return (
-    <ProductContentContainer>
+    <article>
       <ProductContentText>
         <div dangerouslySetInnerHTML={{ __html: marked(parsedContent) }} />
       </ProductContentText>
-    </ProductContentContainer>
+    </article>
   );
 };
 

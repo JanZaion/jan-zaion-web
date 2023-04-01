@@ -1,5 +1,5 @@
 import About from '../components/About/About';
-import Contact from '../components/Contact/Contact';
+import ContactForm from '../components/ContactForm/ContactForm';
 import { Section } from '../components/GlobalComponents/GlobalComponents';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
@@ -13,7 +13,7 @@ const Home = () => {
       </Section>
       <Projects />
       <About />
-      <Contact />
+      <ContactForm />
     </Layout>
   );
 };

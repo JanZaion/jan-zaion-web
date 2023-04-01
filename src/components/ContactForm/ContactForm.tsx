@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { Button } from '../Button/styled';
+import { Section, SectionTitle } from '../GlobalComponents/GlobalComponents';
 
 import { Form, Field, Deets, ButtonContainer } from './styled';
 
@@ -20,21 +21,24 @@ const ContactForm = () => {
   }
 
   return (
-    <Form
-      action={FORM_ENDPOINT}
-      method="POST"
-      onSubmit={handleSubmit}
-      target="about:blank"
-    >
-      <Deets>
-        <Field name="name" placeholder="Your name" required type="text" />
-        <Field name="email" placeholder="Email" required type="email" />
-      </Deets>
-      <textarea name="message" placeholder="Your message" required />
-      <ButtonContainer>
-        <Button type="submit">Send</Button>
-      </ButtonContainer>
-    </Form>
+    <Section id="contact">
+      <SectionTitle>Contact</SectionTitle>
+      <Form
+        action={FORM_ENDPOINT}
+        method="POST"
+        onSubmit={handleSubmit}
+        target="about:blank"
+      >
+        <Deets>
+          <Field name="name" placeholder="Your name" required type="text" />
+          <Field name="email" placeholder="Email" required type="email" />
+        </Deets>
+        <textarea name="message" placeholder="Your message" required />
+        <ButtonContainer>
+          <Button type="submit">Send</Button>
+        </ButtonContainer>
+      </Form>
+    </Section>
   );
 };
 

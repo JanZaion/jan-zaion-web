@@ -1,17 +1,5 @@
 import styled from 'styled-components';
 
-export const ProductContentContainer = styled.article`
-  padding: 32px 48px 0;
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding: 24px 48px 0;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 16px 16px 0;
-  }
-`;
-
 export const ProductContentText = styled.div`
   max-width: 860px;
   line-height: 2em;
@@ -56,11 +44,9 @@ export const ProductContentText = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     line-height: 32px;
-    padding-bottom: 24px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     line-height: 24px;
-    padding-bottom: 16px;
   }
 `;

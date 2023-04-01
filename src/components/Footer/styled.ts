@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-export const FooterWrapper = styled.section`
-  padding: 48px 48px;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 48px 16px;
-  }
-`;
-
 export const LinkItem = styled.a`
   font-size: 18px;
   line-height: 30px;

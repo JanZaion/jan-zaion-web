@@ -1,17 +1,19 @@
 import BigButton from '../BigButton/BigButton';
-import { SectionText, MainTitle } from '../GlobalComponents/GlobalComponents';
-
-import { HeroSection } from './styled';
+import {
+  SectionText,
+  MainTitle,
+  Section,
+} from '../GlobalComponents/GlobalComponents';
 
 const Hero = () => (
-  <HeroSection>
+  <Section>
     <MainTitle>
       Hi, I am Jan.
       <br />I develop software
     </MainTitle>
     <SectionText>{'< Web / TypeScript / Max for Live >'}</SectionText>
     <BigButton />
-  </HeroSection>
+  </Section>
 );
 
 export default Hero;

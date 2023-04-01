@@ -4,6 +4,7 @@ export const Form = styled.form`
   display: grid;
   grid-row-gap: 10px;
   width: 460px;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
