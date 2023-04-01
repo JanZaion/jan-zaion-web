@@ -16,7 +16,7 @@ const About = () => (
       love building simple solutions to complex problems. Solutions that focus
       on one thing, but do that one thing really well.
       <br />
-      <br /> My native programming language is JavaScript. I&apos;ve worked with
+      <br /> My native programming language is TypeScript. I&apos;ve worked with
       various technologies including React, Next, Node, Max and Max for Live.
     </SectionText>
   </Section>

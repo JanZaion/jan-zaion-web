@@ -1,6 +1,6 @@
 import {
   Section,
-  SectionTitle,
+  MainTitle,
   SectionText,
 } from '../GlobalComponents/GlobalComponents';
 
@@ -9,7 +9,7 @@ import type { ProductHeroProps } from './types';
 
 const ProductHero = ({ title, tagLine, coverImage }: ProductHeroProps) => (
   <Section>
-    <SectionTitle main>{title}</SectionTitle>
+    <MainTitle>{title}</MainTitle>
     <SectionText>{tagLine}</SectionText>
     <StyledImg alt={title} loading="lazy" src={coverImage} title={title} />
   </Section>

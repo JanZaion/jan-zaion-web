@@ -1,58 +1,43 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-  padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
-  margin: 0 auto;
+  padding: 32px 48px 0;
   max-width: 1040px;
-  box-sizing: content-box;
-  position: relative;
-  overflow: hidden;
-  grid-template-columns: 1fr 1fr;
-
-  img {
-    max-width: 100%;
-  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
-
-    flex-direction: column;
+    padding: 16px 16px 0;
   }
 `;
 
-// make into h1 for blog posts and h2 as a separate component for other stuff
 export const SectionTitle = styled.h2`
-  font-weight: 800;
-  font-size: ${(props) => (props.main ? '65px' : '56px')};
-  line-height: ${(props) => (props.main ? '72px' : '56px')};
-  width: max-content;
-  max-width: 100%;
-  background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
-  padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+  font-size: 48px;
+  line-height: 56px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => (props.main ? '56px' : '48px')};
-    line-height: ${(props) => (props.main ? '56px' : '48px')};
-    margin-bottom: 12px;
-    padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
+    font-size: 48px;
+    line-height: 48px;
   }
-
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? '28px' : '32px')};
-    line-height: ${(props) => (props.main ? '32px' : '40px')};
-    margin-bottom: 8px;
-    padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
-    max-width: 100%;
+  }
+`;
+
+export const MainTitle = styled.h1`
+  padding: 58px 0 16px;
+  font-size: 65px;
+  line-height: 72px;
+  margin: 0 0 8px;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 56px;
+    line-height: 56px;
+    padding: 40px 0 12px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 16px 0 8px;
   }
 `;
 

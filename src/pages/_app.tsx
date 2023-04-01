@@ -8,7 +8,7 @@ const App: AppType = ({ Component, pageProps }) => (
     <Head>
       <title>Jan Zaion</title>
       <meta
-        content="I am Jan Zaion, a Typescript developer with passion for technology and music. Contact me if you are interested in cooperation."
+        content="I am Jan Zaion, a TypeScript developer with passion for technology and music. Contact me if you are interested in cooperation."
         name="description"
       />
     </Head>

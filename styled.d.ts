@@ -2,11 +2,15 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    borderRadius: string;
+    fonts: {
+      main: string;
+      title: string;
+    };
 
     colors: {
-      main: string;
-      secondary: string;
+      title: string;
+      primary1: string;
+      background: string;
     };
 
     breakpoints: {

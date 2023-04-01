@@ -59,17 +59,6 @@ export const ProductContentText = styled.div`
     max-width: 100%;
   }
 
-  h2,
-  h3 {
-    background: linear-gradient(
-      121.57deg,
-      #ffffff 18.77%,
-      rgba(255, 255, 255, 0.66) 60.15%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   h2 {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
@@ -86,13 +75,11 @@ export const ProductContentText = styled.div`
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
-    font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
   }
