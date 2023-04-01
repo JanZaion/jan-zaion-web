@@ -32,15 +32,28 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 700;
     color: ${(props) => props.theme.colors.title};
     margin-bottom: 16px;
-
+    
     @media ${(props) => props.theme.breakpoints.md} {
       margin-bottom: 12px;
     }
-
+    
     @media ${(props) => props.theme.breakpoints.sm} {
       line-height: 40px;
       margin-bottom: 8px;
     }
+  }
+
+  h2::before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 3px;
+    background-color: #fff;
+    background: #d0bb57;
+  }
+
+  p {
+    color: ${(props) => props.theme.colors.text};
   }
 
   a {

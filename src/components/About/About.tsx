@@ -1,13 +1,11 @@
 import {
   Section,
-  SectionDivider,
   SectionText,
   SectionTitle,
 } from '../GlobalComponents/GlobalComponents';
 
 const About = () => (
   <Section id="about">
-    <SectionDivider />
     <SectionTitle>About</SectionTitle>
     <SectionText>
       My name is Jan and I&apos;m based in Brno, Czech Republic. Throughout my

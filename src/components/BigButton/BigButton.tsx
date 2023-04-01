@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
 
-import { ButtonBack, ButtonFront } from '../GlobalComponents/GlobalComponents';
+import { ButtonBack, ButtonFront } from './styled';
 
 const BigButton = () => (
   <Link href="/#contact">

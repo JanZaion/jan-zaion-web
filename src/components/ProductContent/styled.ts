@@ -64,15 +64,6 @@ export const ProductContentText = styled.div`
     margin-bottom: 0.8em;
   }
 
-  h2::before {
-    content: '';
-    display: block;
-    width: 64px;
-    height: 3px;
-    background-color: #fff;
-    background: #d0bb57;
-  }
-
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     line-height: 32px;

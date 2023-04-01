@@ -1,9 +1,5 @@
 import { projects } from '../../constants/constants';
-import {
-  Section,
-  SectionDivider,
-  SectionTitle,
-} from '../GlobalComponents/GlobalComponents';
+import { Section, SectionTitle } from '../GlobalComponents/GlobalComponents';
 
 import {
   BlogCard,
@@ -19,7 +15,6 @@ import {
 
 const Projects = () => (
   <Section id="projects">
-    <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map((p) => {
