@@ -19,6 +19,7 @@ export const LinkItem = styled.a`
 
   &:hover {
     left: 6px;
+    color: ${(props) => props.theme.colors.link};
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

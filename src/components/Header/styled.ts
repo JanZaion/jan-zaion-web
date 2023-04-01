@@ -1,14 +1,10 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
   padding-top: 2.5rem;
   padding-left: 48px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 24px 16px 0;
@@ -16,17 +12,25 @@ export const Container = styled.div`
   }
 `;
 
-export const Div2 = styled.div`
+export const Menu = styled.div`
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   justify-content: flex-start;
+  gap: 1.5rem;
+
+  /* make this the full width once darkmode button is here by making a wrapper elem */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0;
     grid-area: 2 / 1 / 3 / 5;
   }
+
+  @media ${(props) => props.theme.breakpoints.xs} {
+    display: grid;
+  }
 `;
+
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: block;
@@ -42,57 +46,13 @@ export const Div3 = styled.div`
 export const NavLink = styled.span`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.text};
   transition: 0.4s ease;
+
   &:hover {
-    color: #fff;
+    color: ${(props) => props.theme.colors.link};
     opacity: 1;
     cursor: pointer;
-  }
-`;
-
-export const ContactDropDown = styled.button`
-  border: none;
-  display: flex;
-  position: relative;
-  background: none;
-  font-size: 1.7rem;
-
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  transition: 0.3s ease;
-
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    color: #fff;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.4rem 0;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding: 0;
-  }
-`;
-
-export const NavProductsIcon = styled(IoIosArrowDropdown)`
-  margin-left: 8px;
-  display: flex;
-  align-self: center;
-  transition: 0.3s ease;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
-
-  &:hover {
-    opacity: 1;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 2px 0 0 2px;
-    width: 15px;
   }
 `;
 
@@ -102,6 +62,7 @@ export const SocialIcons = styled.a`
   border-radius: 50px;
   padding: 8px;
   padding-left: 0px;
+
   &:hover {
     padding-left: 8px;
     background-color: #212d45;

@@ -11,12 +11,14 @@ export default {
     background: '#0F1624',
     divider: 'teal',
     cardHeader: '#9cc9e3',
+    link: 'orange',
     // primary1: 'hsl(204,23.8%,95.9%)',
     // accent1: 'hsl(34.9,98.6%,72.9%)',
     // background2: 'hsl(232.7,27.3%,23.7%)',
   },
   // Breakpoints for responsive design
   breakpoints: {
+    xs: 'screen and (max-width: 350px)',
     sm: 'screen and (max-width: 640px)',
     md: 'screen and (max-width: 768px)',
     lg: 'screen and (max-width: 1024px)',

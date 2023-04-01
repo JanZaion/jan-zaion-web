@@ -2,11 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-import { Container, Div2, Div3, NavLink, SocialIcons } from './styled';
+import { Container, Menu, Div3, NavLink, SocialIcons } from './styled';
 
 const Header = () => (
   <Container>
-    <Div2>
+    <Menu>
       <Link href="/">
         <NavLink>Home</NavLink>
       </Link>
@@ -16,7 +16,10 @@ const Header = () => (
       <Link href="/#about">
         <NavLink>About</NavLink>
       </Link>
-    </Div2>
+      <Link href="/#contact">
+        <NavLink>Contact</NavLink>
+      </Link>
+    </Menu>
     <Div3>
       <SocialIcons
         href="https://www.linkedin.com/in/zajicekjan/"

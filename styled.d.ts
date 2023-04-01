@@ -13,9 +13,11 @@ declare module 'styled-components' {
       background: string;
       divider: string;
       cardHeader: string;
+      link: string;
     };
 
     breakpoints: {
+      xs: string;
       sm: string;
       md: string;
       lg: string;
