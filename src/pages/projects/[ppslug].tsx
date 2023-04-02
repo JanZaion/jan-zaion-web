@@ -8,8 +8,7 @@ import ProductContent from '../../components/ProductContent/ProductContent';
 import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
 import { Layout } from '../../layout/Layout';
-
-import type { DocuPageProps, HeadT } from './types';
+import type { DocuPageProps, HeadT } from '../../types/ppslugTypes';
 
 const DocuPage = ({
   frontmatter: { title, tagLine, coverImage, repo, download },
