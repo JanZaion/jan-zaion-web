@@ -10,7 +10,7 @@ const ProductHero = ({ title, tagLine, coverImage }: ProductHeroProps) => (
   <Section>
     <MainTitle>{title}</MainTitle>
     <SectionText>{tagLine}</SectionText>
-    <img alt={title} loading="lazy" src={coverImage} title={title} />
+    <img alt={title} loading="eager" src={coverImage} title={title} />
   </Section>
 );
 
