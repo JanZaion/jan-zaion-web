@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { Section } from '../GlobalComponents/GlobalComponents';
