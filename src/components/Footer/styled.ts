@@ -41,7 +41,7 @@ export const LinkList = styled.div`
   flex-direction: column;
 `;
 
-export const LinkTitle = styled.h4`
+export const LinkTitle = styled.div`
   font-size: ${(props) => props.theme.typography.title5.fontSize};
   text-transform: uppercase;
   color: ${(props) => props.theme.colors.text};

@@ -16,6 +16,7 @@ export const CardInfoContainer = styled.div`
 `;
 
 export const GridContainer = styled.section`
+  padding-top: 24px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   place-items: center;
