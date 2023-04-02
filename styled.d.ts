@@ -29,35 +29,27 @@ declare module 'styled-components' {
       fontWeightBold: number;
       article: {
         fontSize: string;
-        lineHeight: number;
       };
       subtitle1: {
         fontSize: string;
-        lineHeight: number;
       };
       subtitle2: {
         fontSize: string;
-        lineHeight: number;
       };
       title1: {
         fontSize: string;
-        lineHeight: number;
       };
       title2: {
         fontSize: string;
-        lineHeight: number;
       };
       title3: {
         fontSize: string;
-        lineHeight: number;
       };
       title4: {
         fontSize: string;
-        lineHeight: number;
       };
       title5: {
         fontSize: string;
-        lineHeight: number;
       };
     };
   }
