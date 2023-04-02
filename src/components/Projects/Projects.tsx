@@ -1,5 +1,5 @@
 import { projects } from '../../constants/constants';
-import { Section, SectionTitle } from '../GlobalComponents/GlobalComponents';
+import { Section } from '../GlobalComponents/GlobalComponents';
 import { LinkButton } from '../LinkButton/LinkButton';
 
 import {
@@ -14,7 +14,7 @@ import {
 
 const Projects = () => (
   <Section id="projects">
-    <SectionTitle>Projects</SectionTitle>
+    <h2>Projects</h2>
     <GridContainer>
       {projects.map(({ title, image, description }) => (
         <BlogCard key={title}>

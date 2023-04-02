@@ -1,10 +1,10 @@
-import { Section, SectionTitle } from '../GlobalComponents/GlobalComponents';
+import { Section } from '../GlobalComponents/GlobalComponents';
 
 import { AboutText } from './styled';
 
 const About = () => (
   <Section id="about">
-    <SectionTitle>About</SectionTitle>
+    <h2>About</h2>
     <AboutText>
       My name is Jan and I&apos;m based in Brno, Czech Republic. Throughout my
       career, I&apos;ve held various positions in the IT industry. I have a

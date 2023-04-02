@@ -58,8 +58,15 @@ const GlobalStyles = createGlobalStyle`
   h2 {
     font-size: ${(props) => props.theme.typography.title2.fontSize};
 
+    line-height: 56px;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+      line-height: 48px;
+    }
+
     @media ${(props) => props.theme.breakpoints.sm} {
       font-size: ${(props) => props.theme.typography.title3.fontSize};
+      line-height: 40px;
     }
   }
 
@@ -90,6 +97,16 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     color: ${(props) => props.theme.colors.text};
+    line-height: 36px;
+    font-weight: ${(props) => props.theme.typography.fontWeightLight};
+
+    @media ${(props) => props.theme.breakpoints.md} {
+      line-height: 32px;
+    }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      line-height: 26px;
+    }
   }
 
   a {

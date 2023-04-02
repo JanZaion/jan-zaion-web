@@ -26,35 +26,27 @@ export default {
     fontWeightBold: 700,
     article: {
       fontSize: '1.15rem',
-      lineHeight: 1.375,
     },
     subtitle1: {
       fontSize: '1.5rem',
-      lineHeight: 1.375,
     },
     subtitle2: {
       fontSize: '1.2rem',
-      lineHeight: 1.375,
     },
     title1: {
       fontSize: '4rem',
-      lineHeight: 1.375,
     },
     title2: {
       fontSize: '3rem',
-      lineHeight: 1.375,
     },
     title3: {
       fontSize: '1.8rem',
-      lineHeight: 1.375,
     },
     title4: {
       fontSize: '1.4rem',
-      lineHeight: 1.375,
     },
     title5: {
-      fontSize: '20rem',
-      lineHeight: 1.375,
+      fontSize: '0.9rem',
     },
   },
 };

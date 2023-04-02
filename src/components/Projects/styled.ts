@@ -40,7 +40,7 @@ export const BlogCard = styled.div`
 `;
 
 export const CardHeader = styled.h3`
-  font-weight: 500;
+  font-weight: ${(props) => props.theme.typography.fontWeightMedium};
   letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardHeader};
   padding: 0.5rem 0;
@@ -50,7 +50,6 @@ export const CardHeader = styled.h3`
 
 export const CardInfo = styled.p`
   width: 100%;
-  line-height: 24px;
 `;
 
 export const ButtonContainer = styled.div`

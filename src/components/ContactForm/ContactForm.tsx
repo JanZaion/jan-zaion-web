@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Button } from '../Button/styled';
-import { Section, SectionTitle } from '../GlobalComponents/GlobalComponents';
+import { Section } from '../GlobalComponents/GlobalComponents';
 
 import { Form, Field, Deets, ButtonContainer } from './styled';
 
@@ -22,7 +22,7 @@ const ContactForm = () => {
 
   return (
     <Section id="contact">
-      <SectionTitle>Contact</SectionTitle>
+      <h2>Contact</h2>
       <Form
         action={FORM_ENDPOINT}
         method="POST"

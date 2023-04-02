@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductContentText = styled.div`
-  max-width: 860px;
-  line-height: 2em;
+  line-height: 36px;
   font-weight: ${(props) => props.theme.typography.fontWeightLight};
   font-size: ${(props) => props.theme.typography.article.fontSize};
 
@@ -10,14 +9,16 @@ export const ProductContentText = styled.div`
   ul,
   ol {
     color: ${(props) => props.theme.colors.text};
-    margin-bottom: 1em;
+    margin-bottom: 18px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      line-height: 30px;
+    }
   }
 
   ul,
   ol {
-    color: ${(props) => props.theme.colors.text};
-    margin-bottom: 1em;
-    margin-left: 4rem;
+    margin-left: 32px;
   }
 
   ol {
@@ -37,8 +38,8 @@ export const ProductContentText = styled.div`
   }
 
   h2 {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
+    margin-top: 22px;
+    margin-bottom: 22px;
     font-size: ${(props) => props.theme.typography.title3.fontSize};
   }
 
@@ -48,14 +49,5 @@ export const ProductContentText = styled.div`
 
   h4 {
     font-size: ${(props) => props.theme.typography.title5.fontSize};
-  }
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 670px;
-    line-height: 32px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    line-height: 24px;
   }
 `;
