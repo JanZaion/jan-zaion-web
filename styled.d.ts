@@ -2,11 +2,6 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    fonts: {
-      main: string;
-      title: string;
-    };
-
     colors: {
       title: string;
       text: string;
@@ -23,6 +18,47 @@ declare module 'styled-components' {
       md: string;
       lg: string;
       xl: string;
+    };
+
+    typography: {
+      fontFamily: string;
+      fontSize: string;
+      fontWeightLight: number;
+      fontWeightRegular: number;
+      fontWeightMedium: number;
+      fontWeightBold: number;
+      article: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      subtitle1: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      subtitle2: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      title1: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      title2: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      title3: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      title4: {
+        fontSize: string;
+        lineHeight: number;
+      };
+      title5: {
+        fontSize: string;
+        lineHeight: number;
+      };
     };
   }
 }

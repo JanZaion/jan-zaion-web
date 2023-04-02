@@ -44,15 +44,12 @@ export const CardHeader = styled.h3`
   letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardHeader};
   padding: 0.5rem 0;
-  font-size: 3rem;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
 
-// fix once button exists
 export const CardInfo = styled.p`
   width: 100%;
-  font-style: 2rem;
   line-height: 24px;
 `;
 

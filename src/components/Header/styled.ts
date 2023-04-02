@@ -25,6 +25,7 @@ export const Menu = styled.div`
 
   @media ${(props) => props.theme.breakpoints.xs} {
     display: grid;
+    gap: 0;
   }
 `;
 
@@ -41,7 +42,6 @@ export const Div3 = styled.div`
 `;
 
 export const NavLink = styled.span`
-  font-size: 2rem;
   line-height: 32px;
   color: ${(props) => props.theme.colors.text};
   transition: 0.4s ease;

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const ProductContentText = styled.div`
   max-width: 860px;
   line-height: 2em;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: ${(props) => props.theme.typography.fontWeightLight};
+  font-size: ${(props) => props.theme.typography.article.fontSize};
 
   p,
   ul,
@@ -39,6 +39,15 @@ export const ProductContentText = styled.div`
   h2 {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
+    font-size: ${(props) => props.theme.typography.title3.fontSize};
+  }
+
+  h3 {
+    font-size: ${(props) => props.theme.typography.title4.fontSize};
+  }
+
+  h4 {
+    font-size: ${(props) => props.theme.typography.title5.fontSize};
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

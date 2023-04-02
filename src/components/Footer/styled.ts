@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const EmailContainer = styled.a`
-  font-size: 18px;
   line-height: 30px;
   color: ${(props) => props.theme.colors.title};
   transition: 0.3s ease;
@@ -14,7 +13,6 @@ export const EmailContainer = styled.a`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 16px;
     line-height: 28px;
     display: flex;
   }
@@ -46,7 +44,6 @@ export const LinkList = styled.div`
 `;
 
 export const LinkTitle = styled.h4`
-  font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: ${(props) => props.theme.colors.text};

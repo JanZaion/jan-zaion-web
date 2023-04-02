@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const ButtonBack = styled.div`
-  width:262px;
+  width: 262px;
   height: 64px;
   border-radius: 50px;
-  font-size: 24px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -20,15 +19,13 @@ export const ButtonBack = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     width: 184px;
     height: 48px;
-    font-size: : 16px;
-    margin-bottom:64px;
+    margin-bottom: 64px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     height: 32px;
-    font-size: 14px;
-    margin-bottom:32px;
+    margin-bottom: 32px;
   }
 `;
 
@@ -45,7 +42,6 @@ export const ButtonFront = styled.button`
   background: #f46737;
   opacity: 1;
   transition: 0.4s ease;
-  font-size: : 24px;
   font-weight: 600;
   align-items: center;
   justify-content: center;
@@ -76,13 +72,5 @@ export const ButtonFront = styled.button`
     opacity: 0.5;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
       inset 0px 0px 4px rgba(20, 20, 55, 0.3);
-  }
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: : 16px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
   }
 `;

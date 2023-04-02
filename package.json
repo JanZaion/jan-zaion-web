@@ -1,6 +1,11 @@
 {
   "name": "jan_zaion_web",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "description": "Website for Jan Zaion",
+  "maintainers": [
+    "Jan Zajíček"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
