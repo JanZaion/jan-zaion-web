@@ -23,13 +23,13 @@ const Footer = () => {
         </LinkList>
         <LinkContainer>
           <SocialIcons href="https://github.com/JanZaion" target="_blank">
-            <AiFillGithub size="3rem" />
+            <AiFillGithub size="2.5rem" />
           </SocialIcons>
           <SocialIcons
             href="https://www.linkedin.com/in/zajicekjan/"
             target="_blank"
           >
-            <AiFillLinkedin size="3rem" />
+            <AiFillLinkedin size="2.5rem" />
           </SocialIcons>
         </LinkContainer>
       </Section>

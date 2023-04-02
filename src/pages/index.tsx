@@ -1,6 +1,5 @@
 import About from '../components/About/About';
 import ContactForm from '../components/ContactForm/ContactForm';
-import { Section } from '../components/GlobalComponents/GlobalComponents';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import { Layout } from '../layout/Layout';
@@ -8,9 +7,7 @@ import { Layout } from '../layout/Layout';
 const Home = () => {
   return (
     <Layout>
-      <Section>
-        <Hero />
-      </Section>
+      <Hero />
       <Projects />
       <About />
       <ContactForm />

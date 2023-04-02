@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
 `;
 

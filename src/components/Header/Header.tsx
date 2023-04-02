@@ -25,10 +25,10 @@ const Header = () => (
         href="https://www.linkedin.com/in/zajicekjan/"
         target="blank"
       >
-        <AiFillLinkedin size="3rem" />
+        <AiFillLinkedin size="2rem" />
       </SocialIcons>
       <SocialIcons href="https://github.com/JanZaion" target="blank">
-        <AiFillGithub size="3rem" />
+        <AiFillGithub size="2rem" />
       </SocialIcons>
     </Div3>
   </Container>

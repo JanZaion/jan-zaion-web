@@ -8,24 +8,23 @@ export const Img = styled.img`
 `;
 
 export const CardInfoContainer = styled.div`
-  padding: 0 50px;
+  padding: 0 30px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 `;
 
 export const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
   place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  column-gap: 20px;
+  row-gap: 30px;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     padding-bottom: 0;
   }
 `;
@@ -43,7 +42,7 @@ export const CardHeader = styled.h3`
   font-weight: ${(props) => props.theme.typography.fontWeightMedium};
   letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardHeader};
-  padding: 0.5rem 0;
+  padding: 8px 0;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
@@ -55,5 +54,5 @@ export const CardInfo = styled.p`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 `;
