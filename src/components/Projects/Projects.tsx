@@ -28,7 +28,6 @@ const Projects = () => (
             <CardHeader>{title}</CardHeader>
             <CardInfo className="card-info">{description}</CardInfo>
           </CardInfoContainer>
-          {/* replace with button once available */}
           <ButtonContainer>
             <LinkButton
               href={`/projects/${title.split(' ').join('-')}` as unknown as URL}
