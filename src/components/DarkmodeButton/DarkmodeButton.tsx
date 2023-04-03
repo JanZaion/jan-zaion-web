@@ -21,7 +21,7 @@ export const DarkmodeButton = () => {
     <Switch
       borderRadius={6}
       checked={checked}
-      checkedIcon={<RiMoonFill size={22} viewBox="-8 -6 50 50" />}
+      checkedIcon={<RiMoonFill fill={title} size={22} viewBox="-8 -6 50 50" />}
       handleDiameter={14}
       height={16}
       offColor={divider}
