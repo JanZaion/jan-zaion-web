@@ -1,4 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { BsDiscord, BsTelegram } from 'react-icons/bs';
 
 import { Section } from '../GlobalComponents/GlobalComponents';
 
@@ -29,6 +30,18 @@ const Footer = () => {
             target="_blank"
           >
             <AiFillLinkedin size="2.5rem" />
+          </SocialIcons>
+          <SocialIcons
+            href="https://www.linkedin.com/in/zajicekjan/"
+            target="_blank"
+          >
+            <BsDiscord size="2.5rem" />
+          </SocialIcons>
+          <SocialIcons
+            href="https://www.linkedin.com/in/zajicekjan/"
+            target="_blank"
+          >
+            <BsTelegram size="2.5rem" />
           </SocialIcons>
         </LinkContainer>
       </Section>
