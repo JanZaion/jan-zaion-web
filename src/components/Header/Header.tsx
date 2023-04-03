@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { DarkmodeButton } from '../DarkmodeButton/DarkmodeButton';
 
-import { Container, Menu, Div3, NavLink, SocialIcons } from './styled';
+import { Container, Menu, DarkModeButtonContainer, NavLink } from './styled';
 
 const Header = () => (
   <Container>
@@ -21,18 +20,9 @@ const Header = () => (
         <NavLink>Contact</NavLink>
       </Link>
     </Menu>
-    <DarkmodeButton />
-    <Div3>
-      <SocialIcons
-        href="https://www.linkedin.com/in/zajicekjan/"
-        target="blank"
-      >
-        <AiFillLinkedin size="2rem" />
-      </SocialIcons>
-      <SocialIcons href="https://github.com/JanZaion" target="blank">
-        <AiFillGithub size="2rem" />
-      </SocialIcons>
-    </Div3>
+    <DarkModeButtonContainer>
+      <DarkmodeButton />
+    </DarkModeButtonContainer>
   </Container>
 );
 
