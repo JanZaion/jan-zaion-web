@@ -5,12 +5,13 @@ const lightTheme = {
 
   colors: {
     title: '#0F1624',
-    text: 'rgba(255, 255, 255, 0.65)',
+    text: '#000000',
     background: '#e8e6e6',
-    divider: 'teal',
-    cardHeader: '#9cc9e3',
+    divider: '#FF7F7F',
+    cardHeader: '#14548b',
     link: '#005AFF',
     button: '#45134a',
+    layoutLine: '#0000001A',
   },
 };
 

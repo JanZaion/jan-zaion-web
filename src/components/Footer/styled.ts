@@ -35,7 +35,12 @@ export const LinkContainer = styled.div`
 `;
 
 export const LinkList = styled.div`
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: ${(props) => props.theme.colors.layoutLine};
+
   padding: 40px 0 28px;
   display: flex;
   flex-direction: column;

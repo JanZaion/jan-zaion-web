@@ -10,6 +10,7 @@ declare module 'styled-components' {
       cardHeader: string;
       link: string;
       button: string;
+      layoutLine: string;
     };
 
     breakpoints: {

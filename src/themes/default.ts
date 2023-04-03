@@ -2,12 +2,13 @@
 const defaultTheme = {
   colors: {
     title: '#e8e6e6',
-    text: 'rgba(255, 255, 255, 0.65)',
+    text: '#FFFFFFA6',
     background: '#0F1624',
     divider: '#008080',
     cardHeader: '#9cc9e3',
     link: '#FFA500',
     button: '#45134a',
+    layoutLine: '#FFFFFF1A',
   },
 
   breakpoints: {

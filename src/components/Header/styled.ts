@@ -15,7 +15,9 @@ export const Menu = styled.div`
   justify-content: flex-start;
   gap: 1.5rem;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: ${(props) => props.theme.colors.divider};
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0;
@@ -34,7 +36,7 @@ export const DarkModeButtonContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-bottom: 4px;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 1 / 1 / 1;
