@@ -10,7 +10,9 @@ const FORM_ENDPOINT =
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
+
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
     setTimeout(() => {
       setSubmitted(true);
     }, 100);
