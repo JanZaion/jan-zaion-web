@@ -29,7 +29,7 @@ export const DarkmodeButton = () => {
       onChange={handleChange}
       onColor={divider}
       onHandleColor={title}
-      uncheckedIcon={<HiSun fill={title} size={22} viewBox="-15 -5 40 40" />}
+      uncheckedIcon={<HiSun fill={title} size={22} viewBox="-11 -3 35 35" />}
       width={36}
     />
   );
