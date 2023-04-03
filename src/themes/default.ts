@@ -53,6 +53,7 @@ const defaultTheme = {
   },
 
   themeSwitcher: () => {},
+  light: false,
 };
 
 export default defaultTheme;

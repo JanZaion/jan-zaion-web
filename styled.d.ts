@@ -55,5 +55,6 @@ declare module 'styled-components' {
     };
 
     themeSwitcher: () => void;
+    light: boolean;
   }
 }

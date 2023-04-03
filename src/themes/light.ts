@@ -13,6 +13,8 @@ const lightTheme = {
     button: '#45134a',
     layoutLine: '#0000001A',
   },
+
+  light: true,
 };
 
 export default lightTheme;

@@ -5,12 +5,13 @@ import Switch from 'react-switch';
 import { useTheme } from 'styled-components';
 
 export const DarkmodeButton = () => {
-  const [checked, setChecked] = useState(false);
   const theme = useTheme();
   const {
     themeSwitcher,
     colors: { divider, title },
+    light,
   } = theme;
+  const [checked, setChecked] = useState(light);
 
   const handleChange = () => {
     setChecked((p) => !p);
