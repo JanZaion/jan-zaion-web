@@ -52,5 +52,7 @@ declare module 'styled-components' {
         fontSize: string;
       };
     };
+
+    themeSwitcher: () => void;
   }
 }

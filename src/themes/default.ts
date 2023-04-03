@@ -1,11 +1,12 @@
-export default {
+/* eslint-disable @typescript-eslint/no-empty-function */
+const defaultTheme = {
   colors: {
     title: '#e8e6e6',
     text: 'rgba(255, 255, 255, 0.65)',
     background: '#0F1624',
-    divider: 'teal',
+    divider: '#008080',
     cardHeader: '#9cc9e3',
-    link: 'orange',
+    link: '#FFA500',
     button: '#45134a',
   },
 
@@ -49,4 +50,8 @@ export default {
       fontSize: '0.9rem',
     },
   },
+
+  themeSwitcher: () => {},
 };
+
+export default defaultTheme;
