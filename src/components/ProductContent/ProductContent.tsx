@@ -7,7 +7,7 @@ import type { ProductContentProps } from './types';
 const ProductContent = ({ content }: ProductContentProps) => {
   const renderer = new Renderer();
   renderer.image = (href: string, title: string) => {
-    return `<img src="${href}" title="${title}" alt="${title}" loading="lazy" />`;
+    return `<img src="${href}" title="${title}" alt="${title}" loading="lazy" target="_blank" />`;
   };
   const parsedContent = marked(content, { renderer });
 
