@@ -32,15 +32,12 @@ const Footer = () => {
             <AiFillLinkedin size="2.5rem" />
           </SocialIcons>
           <SocialIcons
-            href="https://www.linkedin.com/in/zajicekjan/"
+            href="https://discordapp.com/users/816349317437849600"
             target="_blank"
           >
             <BsDiscord size="2.5rem" />
           </SocialIcons>
-          <SocialIcons
-            href="https://www.linkedin.com/in/zajicekjan/"
-            target="_blank"
-          >
+          <SocialIcons href="https://t.me/janzaion" target="_blank">
             <BsTelegram size="2.5rem" />
           </SocialIcons>
         </LinkContainer>
