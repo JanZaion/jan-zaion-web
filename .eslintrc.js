@@ -124,14 +124,6 @@ module.exports = {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    'import/resolver': {
-      typescript: {
-        project: [
-          'packages/aco-einstein/tsconfig.json',
-          'packages/aco-logger/tsconfig.json',
-        ],
-      },
-    },
     react: {
       version: 'detect',
     },
