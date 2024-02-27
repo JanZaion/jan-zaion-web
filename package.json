@@ -21,7 +21,8 @@
     "react-icons": "^4.2.0",
     "react-switch": "^7.0.0",
     "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "13.0.1",
@@ -29,6 +30,7 @@
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.29",
     "@types/styled-components": "^5.1.26",
+    "@types/swiper": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
     "eslint": "8.26.0",

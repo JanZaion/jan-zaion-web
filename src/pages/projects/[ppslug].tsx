@@ -7,6 +7,7 @@ import Head from 'next/head';
 import ProductContent from '../../components/ProductContent/ProductContent';
 import ProductHero from '../../components/ProductHero/ProductHero';
 import Sticky from '../../components/Sticky/Sticky';
+import { Testimonial } from '../../components/Testemonial/Testemonial';
 import { Layout } from '../../layout/Layout';
 import type { DocuPageProps, HeadT } from '../../types/ppslugTypes';
 
@@ -25,6 +26,7 @@ const DocuPage = ({
         <ProductHero coverImage={coverImage} tagLine={tagLine} title={title} />
         <Sticky download={download} repo={repo} />
         <ProductContent content={content} />
+        <Testimonial />
         <Sticky download={download} repo={repo} />
       </Layout>
     </>
