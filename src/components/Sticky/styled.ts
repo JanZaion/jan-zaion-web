@@ -9,7 +9,4 @@ export const StickyBar = styled.div`
   display: flex;
   gap: 4px;
   z-index: 9000;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-  }
 `;

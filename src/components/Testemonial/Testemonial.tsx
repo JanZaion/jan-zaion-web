@@ -11,9 +11,6 @@ import {
   AuthorText,
   Container,
   Line,
-  NavigationButton,
-  NextIconImage,
-  PrevIconImage,
   ReferenceText,
   ReferenceTextBox,
   SlideBox,
@@ -63,29 +60,8 @@ export const Testimonial = () => {
     },
   ];
 
-  const handlePrev = () => {
-    if (!sliderRef.current) return;
-    sliderRef.current.swiper.slidePrev();
-  };
-
-  const handleNext = () => {
-    if (!sliderRef.current) return;
-    sliderRef.current.swiper.slideNext();
-  };
-
   return (
     <Container>
-      <NavigationButton onClick={handlePrev} type="button">
-        <PrevIconImage
-          alt="Arrow"
-          height={40}
-          priority
-          quality={10}
-          src="./arrow.svg"
-          width={40}
-        />
-      </NavigationButton>
-
       <StyledSwiper
         ref={sliderRef}
         autoplay={{ delay: 6000, pauseOnMouseEnter: true }}
@@ -122,19 +98,6 @@ export const Testimonial = () => {
           </SwiperSlide>
         ))}
       </StyledSwiper>
-
-      <div className="next">
-        <NavigationButton onClick={handleNext} type="button">
-          <NextIconImage
-            alt="Arrow"
-            height={40}
-            priority
-            quality={10}
-            src="./arrow.svg"
-            width={40}
-          />
-        </NavigationButton>
-      </div>
     </Container>
   );
 };
