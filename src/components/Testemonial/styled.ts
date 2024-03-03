@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+// eslint-disable-next-line import/no-unresolved
 import { Swiper } from 'swiper/react';
 
 export const Container = styled.div`
   padding: 10px;
+  padding-top: 50px;
   margin-bottom: 16px;
 `;
 

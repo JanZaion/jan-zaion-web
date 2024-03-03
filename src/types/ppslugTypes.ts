@@ -1,3 +1,5 @@
+import type { Testimonials } from './testemonials';
+
 export type DocuPageProps = {
   frontmatter: {
     title: string;
@@ -5,6 +7,7 @@ export type DocuPageProps = {
     coverImage: string;
     repo: URL;
     download: URL;
+    testimonials?: Testimonials;
   };
   content: string;
   head: HeadT;

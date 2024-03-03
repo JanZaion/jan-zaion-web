@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { useRef } from 'react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import type { SwiperRef } from 'swiper/react';
@@ -18,47 +19,10 @@ import {
   SlideImageBox,
   StyledSwiper,
 } from './styled';
+import type { TestimonialProps } from './testimonialProps';
 
-type TestimonialArray = {
-  image: string;
-  reference: string;
-  author: string;
-};
-
-export const Testimonial = () => {
+export const Testimonial = ({ testimonials }: TestimonialProps) => {
   const sliderRef = useRef<SwiperRef>(null);
-
-  const testimonialArray: TestimonialArray[] = [
-    {
-      image: 'chase&status.jpg',
-      reference:
-        "“Chordprinter help us make Badadan. It's extemely powerfull tool.You got ideas in seconds!!!”",
-      author: 'Chase and Status',
-    },
-    {
-      image: 'balron.jpg',
-      reference:
-        "“I've always liked neurofunk, but Chordprinter opened my eyes and I started producing liquidfunk.”",
-      author: 'Balron',
-    },
-    {
-      image: 'morebeat.jpg',
-      reference:
-        '“With Chordprinter, I finish tracks half a year earlier. This is absolutely amazing!!!”',
-      author: 'Morebeat',
-    },
-    {
-      image: 'subfocus.jpeg',
-      reference:
-        "“Since I released Solar System, I've been having trouble finding a good idea. Chordprinter solved this problem for me.”",
-      author: 'Sub Focus',
-    },
-    {
-      image: 'skrillex.jpeg',
-      reference: "“I've always missed a plugin like Chordprinter in Ableton.”",
-      author: 'Skrillex',
-    },
-  ];
 
   return (
     <Container>
@@ -72,7 +36,7 @@ export const Testimonial = () => {
         spaceBetween={100}
         speed={500}
       >
-        {testimonialArray.map((slide) => (
+        {testimonials.map((slide) => (
           <SwiperSlide key={slide.author}>
             <SlideBox>
               <SlideImageBox>

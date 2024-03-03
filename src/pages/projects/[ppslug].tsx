@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import fs from 'fs';
 import path from 'path';
 
@@ -12,7 +13,7 @@ import { Layout } from '../../layout/Layout';
 import type { DocuPageProps, HeadT } from '../../types/ppslugTypes';
 
 const DocuPage = ({
-  frontmatter: { title, tagLine, coverImage, repo, download },
+  frontmatter: { title, tagLine, coverImage, repo, download, testimonials },
   content,
   head,
 }: DocuPageProps) => {
@@ -26,7 +27,7 @@ const DocuPage = ({
         <ProductHero coverImage={coverImage} tagLine={tagLine} title={title} />
         <Sticky download={download} repo={repo} />
         <ProductContent content={content} />
-        <Testimonial />
+        {testimonials ? <Testimonial testimonials={testimonials} /> : <></>}
         <Sticky download={download} repo={repo} />
       </Layout>
     </>
