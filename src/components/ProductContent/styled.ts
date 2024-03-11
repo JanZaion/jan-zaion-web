@@ -50,4 +50,16 @@ export const ProductContentText = styled.div`
   h4 {
     font-size: ${(props) => props.theme.typography.title5.fontSize};
   }
+
+  iframe {
+    @media ${(props) => props.theme.breakpoints.sm} {
+      width: 320px;
+      height: 180px;
+    }
+
+    @media ${(props) => props.theme.breakpoints.xs} {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
