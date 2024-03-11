@@ -13,7 +13,16 @@ import { Layout } from '../../layout/Layout';
 import type { DocuPageProps, HeadT } from '../../types/ppslugTypes';
 
 const DocuPage = ({
-  frontmatter: { title, tagLine, coverImage, repo, download, testimonials },
+  frontmatter: {
+    title,
+    tagLine,
+    coverImage,
+    repo,
+    download,
+    visit,
+    demo,
+    testimonials,
+  },
   content,
   head,
 }: DocuPageProps) => {
@@ -25,10 +34,10 @@ const DocuPage = ({
       </Head>
       <Layout>
         <ProductHero coverImage={coverImage} tagLine={tagLine} title={title} />
-        <Sticky download={download} repo={repo} />
+        <Sticky demo={demo} download={download} repo={repo} visit={visit} />
         {testimonials ? <Testimonial testimonials={testimonials} /> : <></>}
         <ProductContent content={content} />
-        <Sticky download={download} repo={repo} />
+        <Sticky demo={demo} download={download} repo={repo} visit={visit} />
       </Layout>
     </>
   );

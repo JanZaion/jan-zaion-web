@@ -5,8 +5,10 @@ export type DocuPageProps = {
     title: string;
     tagLine: string;
     coverImage: string;
-    repo: URL;
-    download: URL;
+    repo?: URL;
+    download?: URL;
+    visit?: URL;
+    demo?: URL;
     testimonials?: Testimonials;
   };
   content: string;

@@ -3,7 +3,7 @@ title: 'Interactive Beats'
 tagLine: 'Interactive Beats is a browser based sequencer that will make you feel like the Loop Daddy himself.'
 coverImage: '/images/Interactive_Beats_cover.webp'
 repo: 'https://github.com/JanZaion/interactivebeats/'
-download: 'https://janzaion.github.io/interactivebeats/'
+visit: 'https://janzaion.github.io/interactivebeats/'
 metaTitle: 'Interactive Beats'
 metaDescription: 'Interactive Beats is a browser based sequencer that will make you feel like the Loop Daddy himself.'
 ---
