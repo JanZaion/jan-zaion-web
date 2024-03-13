@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: 'Chord Printer',
+    description:
+      'Chord Printer is a Max for Live MIDI device for instant generation of chord progressions. ',
+    image: '/images/Interactive_Beats_thumb.webp',
+  },
+  {
     title: 'Interactive Beats',
     description:
       'Interactive Beats are a browser based sequencer that will make you feel like the Loop Daddy himself.',
