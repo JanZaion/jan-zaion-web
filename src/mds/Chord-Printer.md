@@ -10,6 +10,9 @@ testimonials:
   - image: 'chase&status.jpg'
     reference: "“Chordprinter help us make Badadan. It's extemely powerfull tool.You got ideas in seconds!!!”"
     author: 'Chase and Status'
+  - image: 'karpa.jpg'
+    reference: "“Since my knowledge of music theory isn't that strong, the Chord Printer plugin was a game-changer for me. It simplifies chord creation, making music production much more accessible and enjoyable.”"
+    author: 'Karpa'
   - image: 'balron.jpg'
     reference: "“I've always liked neurofunk, but Chordprinter opened my eyes and I started producing liquidfunk.”"
     author: 'Balron'

@@ -6,22 +6,6 @@ repo: 'https://github.com/JanZaion/melody-spawner/'
 download: 'https://maxforlive.com/library/device/8100/melody-spawner/'
 metaTitle: 'Melody Spawner'
 metaDescription: "Melody Spawner is a Max for Live MIDI device for generation and development of monophonic melodies. Get inspired or create a melody outright directly inside Ableton Live's clips."
-testimonials:
-  - image: 'chase&status.jpg'
-    reference: "“Chordprinter help us make Badadan. It's extemely powerfull tool.You got ideas in seconds!!!”"
-    author: 'Chase and Status'
-  - image: 'balron.jpg'
-    reference: "“I've always liked neurofunk, but Chordprinter opened my eyes and I started producing liquidfunk.”"
-    author: 'Balron'
-  - image: 'morebeat.jpg'
-    reference: '“With Chordprinter, I finish tracks half a year earlier. This is absolutely amazing!!!”'
-    author: 'Morebeat'
-  - image: 'subfocus.jpeg'
-    reference: "“Since I released Solar System, I've been having trouble finding a good idea. Chordprinter solved this problem for me.”"
-    author: 'Sub Focus'
-  - image: 'skrillex.jpeg'
-    reference: "“I've always missed a plugin like Chordprinter in Ableton.”"
-    author: 'Skrillex'
 ---
 
 ## Instant Melodies
