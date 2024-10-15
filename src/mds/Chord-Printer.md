@@ -7,24 +7,18 @@ download: 'google.com'
 metaTitle: 'Chord Printer'
 metaDescription: "Chord Printer is a Max for Live MIDI device for instant generation of chord progressions. Get inspired or create a chord progression outright directly inside Ableton Live's clips."
 testimonials:
-  - image: 'chase&status.jpg'
-    reference: "“Chordprinter help us make Badadan. It's extemely powerfull tool.You got ideas in seconds!!!”"
-    author: 'Chase and Status'
+  - image: 'venjent.jpg'
+    reference: '“I printed some chords and had a song minutes later... This thing is magical! Chord Printer is a simple yet hugely inspiring tool for songwriters of all styles. Thank you for the Printer Jams!”'
+    author: 'Venjent'
   - image: 'karpa.jpg'
     reference: "“Since my knowledge of music theory isn't that strong, the Chord Printer plugin was a game-changer for me. It simplifies chord creation, making music production much more accessible and enjoyable.”"
     author: 'Karpa'
   - image: 'balron.jpg'
-    reference: "“I've always liked neurofunk, but Chordprinter opened my eyes and I started producing liquidfunk.”"
+    reference: '“Chordprinter is a great tool for musical brainstorming in Ableton Live. I especially enjoy its rapid workflow and educational value. It could be the second best thing after actually learning the music theory.”'
     author: 'Balron'
   - image: 'morebeat.jpg'
     reference: '“Coming up with ideas for chord progressions and melodies always felt like a chore. Chordprinter sped up the whole process substantialy and even made it fun.”'
     author: 'Morebeat'
-  - image: 'subfocus.jpeg'
-    reference: "“Since I released Solar System, I've been having trouble finding a good idea. Chordprinter solved this problem for me.”"
-    author: 'Sub Focus'
-  - image: 'skrillex.jpeg'
-    reference: "“I've always missed a plugin like Chordprinter in Ableton.”"
-    author: 'Skrillex'
 ---
 
 ## Instant Chord Progressions
