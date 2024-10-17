@@ -20,7 +20,7 @@ const defaultTheme = {
   },
 
   typography: {
-    fontFamily: 'Space Grotesk, sans-serif',
+    fontFamily: 'Space Grotesk, Roboto, sans-serif',
     fontSize: '14px',
     fontWeightLight: 300,
     fontWeightRegular: 400,
