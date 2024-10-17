@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductContentText = styled.div`
-  line-height: 36px;
+  line-height: 32px;
   font-weight: ${(props) => props.theme.typography.fontWeightLight};
   font-size: ${(props) => props.theme.typography.article.fontSize};
 
@@ -12,7 +12,7 @@ export const ProductContentText = styled.div`
     margin-bottom: 18px;
 
     @media ${(props) => props.theme.breakpoints.sm} {
-      line-height: 30px;
+      line-height: 32px;
     }
   }
 

@@ -8,7 +8,7 @@ export const Img = styled.img`
 `;
 
 export const CardInfoContainer = styled.div`
-  padding: 0 30px;
+  padding: 0 20px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1rem;
@@ -18,9 +18,9 @@ export const CardInfoContainer = styled.div`
 export const GridContainer = styled.section`
   padding-top: 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  place-items: center;
-  column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  place-items: start;
+  column-gap: 5px;
   row-gap: 30px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -33,7 +33,7 @@ export const GridContainer = styled.section`
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
-  width: 400px;
+  width: 320px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -41,7 +41,6 @@ export const BlogCard = styled.div`
 
 export const CardHeader = styled.h3`
   font-weight: ${(props) => props.theme.typography.fontWeightMedium};
-  letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardHeader};
   padding: 8px 0;
   overflow: hidden;

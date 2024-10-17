@@ -96,7 +96,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     color: ${(props) => props.theme.colors.text};
-    line-height: 36px;
+    line-height: 32px;
     font-weight: ${(props) => props.theme.typography.fontWeightLight};
 
     @media ${(props) => props.theme.breakpoints.md} {
