@@ -9,4 +9,5 @@ export const StickyBar = styled.div`
   display: flex;
   gap: 4px;
   z-index: 9000;
+  border-bottom: 1px solid ${(props) => props.theme.colors.layoutLine};
 `;
