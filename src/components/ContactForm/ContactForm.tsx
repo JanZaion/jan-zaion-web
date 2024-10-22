@@ -1,3 +1,4 @@
+import type { FormEvent } from 'react';
 import { useState } from 'react';
 
 import { Button } from '../Button/styled';
@@ -10,36 +11,54 @@ const FORM_ENDPOINT =
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          setSubmitted(true);
+        } else {
+          setError(true);
+        }
+      })
+      .catch(() => {
+        setError(true);
+      });
   };
-
-  if (submitted) {
-    return <p>Thank you for your message, I will be in touch soon.</p>;
-  }
 
   return (
     <Section id="contact">
       <h2>Contact</h2>
-      <Form
-        action={FORM_ENDPOINT}
-        method="POST"
-        onSubmit={handleSubmit}
-        target="about:blank"
-      >
-        <Deets>
-          <Field name="name" placeholder="Your name" required type="text" />
-          <Field name="email" placeholder="Email" required type="email" />
-        </Deets>
-        <textarea name="message" placeholder="Your message" required />
-        <ButtonContainer>
-          <Button type="submit">Send</Button>
-        </ButtonContainer>
-      </Form>
+      {submitted && <p>Thank you for your message, I will be in touch soon.</p>}
+      {error && (
+        <p>
+          There was a problem with your submission. Please try to contact me in
+          a different way.
+        </p>
+      )}
+      {!submitted && !error && (
+        <Form method="POST" onSubmit={handleSubmit} target="about:blank">
+          <Deets>
+            <Field name="name" placeholder="Your name" required type="text" />
+            <Field name="email" placeholder="Email" required type="email" />
+          </Deets>
+          <textarea name="message" placeholder="Your message" required />
+          <ButtonContainer>
+            <Button type="submit">Send</Button>
+          </ButtonContainer>
+        </Form>
+      )}
     </Section>
   );
 };
