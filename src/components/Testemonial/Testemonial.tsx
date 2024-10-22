@@ -28,7 +28,7 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
     <Container>
       <StyledSwiper
         ref={sliderRef}
-        autoplay={{ delay: 6000, pauseOnMouseEnter: true }}
+        autoplay={false}
         loop
         modules={[Autoplay, Pagination]}
         pagination={{ clickable: true }}
