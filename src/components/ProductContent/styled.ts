@@ -16,6 +16,10 @@ export const ProductContentText = styled.div`
     }
   }
 
+  strong {
+    font-weight: ${(props) => props.theme.typography.fontWeightBold};
+  }
+
   ul,
   ol {
     margin-left: 32px;

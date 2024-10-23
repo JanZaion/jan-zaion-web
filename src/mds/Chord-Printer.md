@@ -1,7 +1,7 @@
 ---
 title: 'Chord Printer'
 tagLine: "Generate chord progressions instantly inside Ableton Live's clips. Create loops that vibe with this Max for Live device!"
-coverImage: '/images/melodyspawner_cover.PNG'
+coverImage: '/images/chordprinter_cover.PNG'
 demo: 'google.com'
 download: 'google.com'
 metaTitle: 'Chord Printer'
@@ -29,17 +29,21 @@ Creating chord progressions has never been this easy:
 2. Edit the setup of Chord Printer to create the desired chord progression.
 3. Click "Print" to print the chord progression.
 
+Generate basic triad progressions or advanced progressions composed of complex chords. Preview your progressions with any midi instrument or synth of your choice. Modify your progressions through advanced voicing algorithms and note-augmenting features. Get comfortable with an intuitive, easy to learn workflow. No music theory knowledge required to get started!
+
+![instant chord progressions](/images/chordprinter_1.gif 'one click chord progressions')
+
 <!-- short video demonstrating -->
 
 [Introvid](https://www.youtube.com/watch?v=MvqlpIFCzqE)
 
-Generate basic triad progressions or advanced progressions composed of complex chords. Preview your progressions with any midi instrument or synth of your choice. Modify your progressions through advanced voicing algorithms and note-augmenting features. Get comfortable with an intuitive, easy to learn workflow. No music theory knowledge required to get started!
-
 ## Easy to Use but Rich with Features
 
-**Harness the power of randomness.** Create chord progressions from up to 8 chords within a scale of your choice. Preview & print chords as fast as possible, to get to the desired vibe. Lock them in place once you are satisfied and tweak them further.
+**Harness the power of randomness.** Create chord progressions from up to 8 chords within a scale of your choice. Preview & print chords as fast as possible to get to the desired vibe. Lock them in place once you are satisfied and tweak them further.
 
 **Set direction to the random generation.** Random doesn't mean chaos. Select whether you want to generate triads or 7th chords. Decide whether chords should repeat within a progression or not. Augment your chords with bass notes. Open them up to increase sonic variety.
+
+![instant chord progressions](/images/chordprinter_2.gif 'one click chord progressions')
 
 **Tweak voicing of each chord.** Don’t just leave your chords in their basic position. Squish them to create the smoothest flow from one chord to another. Or choose from one of 24 voicing algorithms to push the voicing to the next level, at a click of a single button.
 
@@ -48,6 +52,8 @@ Generate basic triad progressions or advanced progressions composed of complex c
 **Get comfortable with an easy-to-learn workflow.** Toggle between basic and advanced views of Chordprinter. Get right down to business by modifying a few key features of your progression in basic, or get down and dirty with the advanced view and modify all the advanced stuff.
 
 **Create your chords with the instrument you aim to use in your track.** No intermediate preview step necessary. Chordprinter interacts directly with Ableton’s Live, which means that you are able to hear the final sound of your progression right away.
+
+![instant chord progressions](/images/chordprinter_3.gif 'one click chord progressions')
 
 [FeatureOverview](https://www.youtube.com/watch?v=rIrNIzy6U_g)
 
