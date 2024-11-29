@@ -1,9 +1,9 @@
 ---
 title: 'Chord Printer'
 tagLine: "Generate chord progressions instantly inside Ableton Live's clips. Create loops that vibe with this Max for Live device!"
-coverImage: '/images/chordprinter_cover.PNG'
-demo: 'google.com'
-download: 'google.com'
+coverImage: '/images/chordprinter_cover.png'
+demo: 'https://www.youtube.com/watch?v=Uivp-hvk-nk&ab_channel=Venjent'
+download: 'https://www.youtube.com/watch?v=Uivp-hvk-nk&ab_channel=Venjent'
 metaTitle: 'Chord Printer'
 metaDescription: "Chord Printer is a Max for Live MIDI device for instant generation of chord progressions. Get inspired or create a chord progression outright directly inside Ableton Live's clips."
 testimonials:

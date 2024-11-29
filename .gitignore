@@ -33,3 +33,5 @@ yarn-error.log*
 # vercel
 .vercel
 public/images/plug_plac.gif
+
+.vercel
