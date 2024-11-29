@@ -4,14 +4,14 @@ tagLine: "Generate chord progressions instantly inside Ableton Live's clips. Cre
 coverImage: '/images/chordprinter_cover.png'
 demo: 'https://janzaion.gumroad.com/l/chordprinter-demo'
 download: 'https://janzaion.gumroad.com/l/chordprinter'
-metaTitle: 'Chord Printer'
-metaDescription: "Chord Printer is a Max for Live MIDI device for instant generation of chord progressions. Get inspired or create a chord progression outright directly inside Ableton Live's clips."
+metaTitle: 'Chordprinter'
+metaDescription: "Chordprinter is a Max for Live MIDI device for instant generation of chord progressions. Get inspired or create a chord progression outright directly inside Ableton Live's clips."
 testimonials:
   - image: 'venjent.jpg'
-    reference: '“I printed some chords and had a song minutes later... This thing is magical! Chord Printer is a simple yet hugely inspiring tool for songwriters of all styles. Thank you for the Printer Jams!”'
+    reference: '“I printed some chords and had a song minutes later... This thing is magical! Chordprinter is a simple yet hugely inspiring tool for songwriters of all styles. Thank you for the Printer Jams!”'
     author: 'Venjent'
   - image: 'karpa.jpg'
-    reference: "“Since my knowledge of music theory isn't that strong, the Chord Printer plugin was a game-changer for me. It simplifies chord creation, making music production much more accessible and enjoyable.”"
+    reference: "“Since my knowledge of music theory isn't that strong, the Chordprinter plugin was a game-changer for me. It simplifies chord creation, making music production much more accessible and enjoyable.”"
     author: 'Karpa'
   - image: 'balron.jpg'
     reference: '“Chordprinter is a great tool for musical brainstorming in Ableton Live. I especially enjoy its rapid workflow and educational value. It could be the second best thing after actually learning the music theory.”'
@@ -26,7 +26,7 @@ testimonials:
 Creating chord progressions has never been this easy:
 
 1. Select a clip in Ableton Live's session view or arrangement view.
-2. Edit the setup of Chord Printer to create the desired chord progression.
+2. Edit the setup of Chordprinter to create the desired chord progression.
 3. Click "Print" to print the chord progression.
 
 Generate basic triad progressions or advanced progressions composed of complex chords. Preview your progressions with any midi instrument or synth of your choice. Modify your progressions through advanced voicing algorithms and note-augmenting features. Get comfortable with an intuitive, easy to learn workflow. No music theory knowledge required to get started!
