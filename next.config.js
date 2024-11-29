@@ -8,7 +8,7 @@ const nextConfig = {
     return [
       {
         source: '/chordprinter',
-        destination: '/projects/Chord-Printer',
+        destination: '/projects/Chordprinter',
         permanent: true, // 308 status code
       },
     ];
