@@ -20,7 +20,7 @@ export const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   place-items: start;
-  column-gap: 5px;
+  column-gap: 4px;
   row-gap: 30px;
 
   @media ${(props) => props.theme.breakpoints.sm} {

@@ -9,7 +9,7 @@ export const ProductContentText = styled.div`
   ul,
   ol {
     color: ${(props) => props.theme.colors.text};
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     @media ${(props) => props.theme.breakpoints.sm} {
       line-height: 32px;
@@ -42,8 +42,8 @@ export const ProductContentText = styled.div`
   }
 
   h2 {
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     font-size: ${(props) => props.theme.typography.title3.fontSize};
   }
 

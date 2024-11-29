@@ -89,7 +89,7 @@ const GlobalStyles = createGlobalStyle`
     content: '';
     display: block;
     width: 64px;
-    height: 3px;
+    height: 4px;
     background: ${(props) => props.theme.colors.divider};
     margin-bottom: 12px;
   }

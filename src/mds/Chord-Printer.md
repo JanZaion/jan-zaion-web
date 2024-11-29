@@ -35,7 +35,7 @@ Generate basic triad progressions or advanced progressions composed of complex c
 
 <!-- short video demonstrating -->
 
-[Introvid](https://www.youtube.com/watch?v=MvqlpIFCzqE)
+<!-- [Introvid](https://www.youtube.com/watch?v=MvqlpIFCzqE) -->
 
 ## Easy to Use but Rich with Features
 
@@ -55,10 +55,10 @@ Generate basic triad progressions or advanced progressions composed of complex c
 
 ![instant chord progressions](/images/chordprinter_3.gif 'one click chord progressions')
 
-[FeatureOverview](https://www.youtube.com/watch?v=rIrNIzy6U_g)
+<!-- [FeatureOverview](https://www.youtube.com/watch?v=rIrNIzy6U_g) -->
 
 ### Requirements
 
 - Ableton Live Suite 10/11/12 (with Max 8 or higher)
 - MacOS or Windows
-- Installation size: 1.46 MB
+- Installation size: 1.22 MB
