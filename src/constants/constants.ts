@@ -3,7 +3,7 @@ export const projects = [
     title: 'Chord Printer',
     description:
       'Chord Printer is a Max for Live MIDI device for instant generation of chord progressions. ',
-    image: '/images/Interactive_Beats_thumb.webp',
+    image: '/images/chp_thumb.png',
   },
   {
     title: 'Interactive Beats',
