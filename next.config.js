@@ -16,6 +16,11 @@ const nextConfig = {
         destination: '/projects/Chordprinter',
         permanent: true, // 308 status code
       },
+      {
+        source: '/projects/Chordspawner',
+        destination: '/projects/Chordprinter',
+        permanent: true, // 308 status code
+      },
     ];
   },
 };
