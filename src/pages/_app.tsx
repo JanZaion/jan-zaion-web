@@ -1,5 +1,6 @@
 import type { AppType } from 'next/app';
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/next';
 
 import Theme from '../styles/theme';
 
@@ -15,6 +16,7 @@ const App: AppType = ({ Component, pageProps }) => (
     <Theme>
       <Component {...pageProps} />
     </Theme>
+    <Analytics />
   </>
 );
 
